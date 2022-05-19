@@ -1250,6 +1250,37 @@ body{
 .filtre_noslivreur{
     width: 30%;
 }
+/* changes */
+
+.form_delivery{
+    order: 2;
+    height: 30px;
+    width: 100%;
+    margin-left: 10px;
+
+}
+.form_delivery select{
+    background-color: var(--gray-c);
+    height: 100%;
+    margin: 0;
+    outline: 0;
+    width: 18%;
+    color: var(--second-color-blue);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-color: var(--second-color-blue);
+}
+
+.form_delivery button{
+    height: 100%;
+    width: 60px;
+    margin-left: 10px;
+    color: var(--white);
+    background-color: var(--green);
+    border-color: var(--second-color-blue);
+    cursor: pointer;
+}
 
 /*  responcive */
 
