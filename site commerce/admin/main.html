@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>  
+
+</head>
+<body>
+    <div class="nav_menu_container">
+        <div class="navbar_container">
+            <div class="logo_main">
+                <a href="./main.html"><h3 id="text_font_new">world express</h3></a>
+            </div>
+            <div class="toggle_bar">
+                <a href="#" class="toggle-button" id="toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="#" class="close"><img src="../img/exit_icon.png" alt=""></a>
+            <div class="logo">
+                <a href="./main.html"><h3 id="text_font_new">world express</h3></a>
+            </div>
+            <div class="bar_items" id="text_font_paragraph">
+                <ul class="bar_ul">
+                <li class="hide_sub">
+                    <a href="#" title="Ajouter" class="hidden_ele a_hover"><span class="nav_hover"></span><i class="fa fa-cloud-upload-alt"></i>Cree Compte<i class="fa fa-angle-down "> </i></i></a>
+                    <ul class="sub toggle_ele">
+                        <li>
+                            <a href="/admin/accounts/customuser/add/" title="Ajouter" class="a_hover"><span class="nav_hover"></span>Client</a>
+                        </li>
+                        <li>
+                            <a href="/admin/accounts/customuser/add/" title="AjouterP" class="a_hover"><span class="nav_hover"></span>livreur</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="En_ramasage_admin.html"  class="a_hover"><span class="nav_hover"></span> <i class="fa fa-car"></i> En ramassage </a>
+                    <a href="En_transit_admin.html"  class="a_hover"><span class="nav_hover"></span> <i class="fa fa-exchange-alt"></i>En transit </a>
+                    <a href="en_hub.html"  class="a_hover"><span class="nav_hover"></span> <i class="fa fa-home"> </i> En Hub</a>
+                    <a href="En_livraison_admin.html"  class="a_hover"><span class="nav_hover"></span> <i class="fa fa-car"> </i> En livraison</a>
+                    <a href="suspendus_admin.html"  class="a_hover"><span class="nav_hover"></span> <i class="fa fa-ban"> </i> Suspendus</a>
+                    <a href="retour_livreur.html"  class="a_hover"><span class="nav_hover"></span> <i class="fa fa-ban"> </i> retour livreur</a>
+                    
+                </li>
+                <li class="hide_sub">
+                    <a href="#" title="livre" class="hidden_ele a_hover"><span class="nav_hover"></span> <i class="fa fa-angle-down"></i>listes</a>
+                    <ul class="sub toggle_ele">
+                        <li>
+                            <a href="nos_client.html" title="non encaisse" class="a_hover"><span class="nav_hover"></span>Nos client</a>
+                        </li>
+                        <li>
+                            <a href="nos_livreur.html" title="encaisse non paye" class="a_hover"><span class="nav_hover"></span>Les Livreurs</a>
+                        </li>
+                        <li>
+                            <a href="historique_colis_admin.html" title="historique des colis recus" class="a_hover"><span class="nav_hover"></span>historique des colis</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="feedback.html" class="a_hover"><span class="nav_hover"></span> <i class="fa fa-car"></i> Feedbacks </a>
+                </li>
+                </ul>
+            </div>
+            <div class="profil">
+                <a href="./profil.html"><img src="../img/profile_pic.png" alt="Profil"></a>
+            </div>
+        </div>
+    </div>    
+    <div class="container closeSidebare">
+        <div class="picture_container">
+            <div>
+                <img src="../img/admin.png" alt="admin">
+            </div>
+        </div>
+        <div class="description_container">
+            <div class="text_container">
+                <h1 id="text_font_titles">welcome <span id="green">world express Admin</span></h1>
+                <p id="text_font_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem perspiciatis provident, ipsam voluptatibus laborum voluptas asperiores! Tenetur ad hic velit illum natus, rerum ullam nisi, odit temporibus tempore voluptate voluptatibus.</p>
+            </div>
+            <div class="order_container">
+                <a href="#">Crée un compte</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/jspdf-invoice-template@1.4.0/dist/index.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

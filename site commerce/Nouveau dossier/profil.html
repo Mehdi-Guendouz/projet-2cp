@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./autre.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>  
+
+</head>
+<body>
+    <div class="nav_menu_container">
+        <div class="navbar_container">
+            <div class="logo_main">
+                <a href="./ecotrack1.html"><h3 id="text_font_new">world express</h3></a>
+            </div>
+            <div class="toggle_bar">
+                <a href="#" class="toggle-button" id="toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="logo">
+                <a href="#" class="close"><img src="../img/exit_icon.png" alt=""></a>
+                <a href="./ecotrack1.html"><h3 id="text_font_new">world express</h3></a>
+            </div>
+            <div class="bar_items" id="text_font_paragraph">
+                <ul class="bar_ul">
+                <li class="hide_sub">
+                    <a href="#" title="Ajouter" class="hidden_ele a_hover"><span class="nav_hover"></span><i class="fa fa-cloud-upload-alt"></i> Ajouter <i class="fa fa-angle-down "> </i></i></a>
+                    <ul class="sub toggle_ele">
+                        <li>
+                            <a href="./ajouterColis.Html" title="Ajouter" class="a_hover"><span class="nav_hover"></span>Ajouter un colis</a>
+                        </li>
+                        <li>
+                            <a href="./historique_client.html" title="Historique" class="a_hover"><span class="nav_hover"></span>Historique colis</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./pret-a-expeder.html" class="a_hover"><span class="nav_hover"></span> <i class="fa fa-check"></i> pret a expeder<span class="ajouter_notif hide_notif"></span> <span class="ajouter_notif hide_notif"></span></a>
+                    <a href="./En_ramassage.html" class="a_hover"><span class="nav_hover"></span> <i class="fa fa-car"></i> En ramassage </a>
+                    <a href="./En_transit.html" class="a_hover"><span class="nav_hover"></span> <i class="fa fa-exchange-alt"></i>En transit </a>
+                    <a href="./En_hub.html" class="a_hover"><span class="nav_hover"></span> <i class="fa fa-home"> </i> En Hub</a>
+                    <a href="./En-livraison.html" class="a_hover"><span class="nav_hover"></span> <i class="fa fa-car"> </i> En livraison</a>
+                    <a href="./Suspendus.html" class="a_hover"><span class="nav_hover"></span> <i class="fa fa-ban"> </i> Suspendus</a>
+                </li>
+                <li class="hide_sub">
+                    <a href="#" title="livre" class="hidden_ele a_hover"><span class="nav_hover"></span> <i class="fa fa-angle-down"></i> Livre</a>
+                    <ul class="sub toggle_ele">
+                        <li>
+                            <a href="./payer.html" title="non encaisse" class="a_hover"><span class="nav_hover"></span>payé</a>
+                        </li>
+                        <li>
+                            <a href="./nonpayer.html" title="encaisse non paye" class="a_hover"><span class="nav_hover"></span>non payé</a>
+                        </li>
+                        <li>
+                            <a href="./historique_payement.html" title="historique des paiment recus" class="a_hover"><span class="nav_hover"></span> historique des paiements</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hide_sub">
+                    <a href="#" title="retour" class="hidden_ele a_hover"><span class="nav_hover"></span> <i class="fa fa-angle-down"></i>Retour</a>
+                    <ul class="sub toggle_ele">
+                        <li>
+                            <a href="./chez_livreur.html" title="Chez livreur" class="a_hover"><span class="nav_hover"></span>Chez livreur</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="a_hover"><span class="nav_hover"></span><i class="fa fa-paper-plane" aria-hidden="true"></i>Feedback</a>
+                </li>
+                </ul>
+            </div>
+            <div class="profil">
+                <a href="#"><img src="../img/profile_pic.png" alt="Profil"></a>
+            </div>
+        </div>
+    </div>         
+    <div class="pret_container_profil">
+        <div class="profil_container">
+            <div class="profil_header">
+                <h1 id="text_font_titles">Your Profil</h1>
+                <div>
+                    <img src="../img/profile_pic.png" alt="profil">
+                </div>
+            </div>
+            <div class="prof_body" id="text_font_paragraph">
+                <div>
+                    <h3>Nom: </h3>
+                    <p>name</p>
+                </div>
+                <div>
+                    <h3>Prenom: </h3>
+                    <p>prenom</p>
+                </div>
+                <div>
+                    <h3>E-mail: </h3>
+                    <p>emaill@gamil.com</p>
+                </div>
+                <div>
+                    <h3>Phone num:</h3>
+                    <p>0755680010</p>
+                </div>
+                <div class="btn_log">
+                    <button class="logout" ><img src="../img/logout_icon.png" alt="logout"> Logout</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+       
+
+    <script src="./autre.js"></script>
+
+</body>
+</html>

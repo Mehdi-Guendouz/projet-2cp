@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./autre_admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>  
+
+</head>
+<body>
+    <div class="nav_menu_container">
+        <div class="navbar_container">
+            <div class="logo_main">
+                <a href="./main.html"><h3 id="text_font_new">world express</h3></a>
+            </div>
+            <div class="toggle_bar">
+                <a href="#" class="toggle-button" id="toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="#" class="close"><img src="../img/exit_icon.png" alt=""></a>
+            <div class="logo">
+                <a href="./main.html"><h3 id="text_font_new">world express</h3></a>
+            </div>
+            <div class="bar_items" id="text_font_paragraph">
+                <ul class="bar_ul">
+                <li class="hide_sub">
+                    <a href="#" title="Ajouter" class="hidden_ele a_hover"><span class="nav_hover"></span><i class="fa fa-cloud-upload-alt"></i>Cree Compte<i class="fa fa-angle-down "> </i></i></a>
+                    <ul class="sub toggle_ele">
+                        <li>
+                            <a href="/admin/accounts/customuser/add/" title="Ajouter" class="a_hover"><span class="nav_hover"></span>Client</a>
+                        </li>
+                        <li>
+                            <a href="/admin/accounts/customuser/add/" title="AjouterP" class="a_hover"><span class="nav_hover"></span>livreur</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="En_ramasage_admin.html"  class="a_hover"><span class="nav_hover"></span> <i class="fa fa-car"></i> En ramassage </a>
+                    <a href="En_transit_admin.html"  class="a_hover"><span class="nav_hover"></span> <i class="fa fa-exchange-alt"></i>En transit </a>
+                    <a href="en_hub.html"  class="a_hover"><span class="nav_hover"></span> <i class="fa fa-home"> </i> En Hub</a>
+                    <a href="En_livraison_admin.html"  class="a_hover"><span class="nav_hover"></span> <i class="fa fa-car"> </i> En livraison</a>
+                    <a href="suspendus_admin.html"  class="a_hover"><span class="nav_hover"></span> <i class="fa fa-ban"> </i> Suspendus</a>
+                    <a href="retour_livreur.html"  class="a_hover"><span class="nav_hover"></span> <i class="fa fa-ban"> </i> retour livreur</a>
+                    
+                </li>
+                <li class="hide_sub">
+                    <a href="#" title="livre" class="hidden_ele a_hover"><span class="nav_hover"></span> <i class="fa fa-angle-down"></i>listes</a>
+                    <ul class="sub toggle_ele">
+                        <li>
+                            <a href="nos_client.html" title="non encaisse" class="a_hover"><span class="nav_hover"></span>Nos client</a>
+                        </li>
+                        <li>
+                            <a href="nos_livreur.html" title="encaisse non paye" class="a_hover"><span class="nav_hover"></span>Les Livreurs</a>
+                        </li>
+                        <li>
+                            <a href="historique_colis_admin.html" title="historique des colis recus" class="a_hover"><span class="nav_hover"></span>historique des colis</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="feedback.html" class="a_hover"><span class="nav_hover"></span> <i class="fa fa-car"></i> Feedbacks </a>
+                </li>
+                </ul>
+            </div>
+            <div class="profil">
+                <a href="./profil.html"><img src="../img/profile_pic.png" alt="Profil"></a>
+            </div>
+        </div>
+    </div>    
+    <div class="ajouter_container closeSidebare">
+        <div class="description pret_main">
+            <h3 id="text_font_titles">En Hub</h3>
+            <p id="text_font_paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae assumenda nostrum quidem atque delectus.</p>
+        </div>
+        <div class="main_container">
+            <div class="btn btn_pret">
+                <button class="supprimer"><i class="fa fa-trash" aria-hidden="true"></i>suprimer les colis</button>
+                <button class="impremer"><i class="fa fa-print" aria-hidden="true"></i>impremer les etiquettes</button>
+                <button class="impremer"><i class="fa fa-print" aria-hidden="true"></i>impremer une decharge</button>
+                <button class="valider"><i class="fa fa-check" aria-hidden="true"></i>valider l'éxpedition</button>
+            </div>
+            <div class="filtre filtre_pret">
+                <form method="POST" action="" class="form_pret_exp">
+                <div class="filtre_tit">
+                    <h3 id="text_font_titles">Filtre:</h3>
+                </div>
+                <div>
+                    <select name="type" id="">
+                        <option value="0">Type De Livraison</option>
+                        <option value="livraison">livraison</option>
+                        <option value="echange">échange</option>
+                        <option value="pick up">pick up</option>
+                        <option value="recouvrement">recouvrement</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="user_wilaya" id="wilaya_send">
+                        <option value="0">La Wilaya </option>
+                        <option value="Adrar">Adrar</option>
+                        <option value="Chlef">Chlef</option>
+                        <option value="Laghouat">Laghouat</option>
+                        <option value="Oum el-Bouaghi"> Oum el-Bouaghi</option>
+                        <option value="Batna">Batna</option>
+                        <option value="6">Béjaïa</option>
+                        <option value="7">Biskra</option>
+                        <option value="8">Béchar</option>
+                        <option value="9">Blida</option>
+                        <option value="10">Bouira</option>
+                        <option value="11">Tamanghasset</option>
+                        <option value="12">Tébessa</option>
+                        <option value="13">Tlemcen</option>
+                        <option value="14">Tiaret</option>
+                        <option value=" 15">Tizi Ouzou</option>
+                        <option value="16">Algiers</option>
+                        <option value="17">Djelfa</option>
+                        <option value="18">Jijel</option>
+                        <option value="19">Sétif</option>
+                        <option value="20">Saïda</option>
+                        <option value="21">Skikda</option>
+                        <option value="22">Sidi Bel Abbes</option>
+                        <option value="23">Annaba</option>
+                        <option value="24">Guelma</option>
+                        <option value="25">Constantine</option>
+                        <option value="26">Médéa</option>
+                        <option value="27">Mostaganem</option>
+                        <option value="28">M'Sila</option>
+                        <option value="29">Mascara</option>
+                        <option value="30">Ouargla</option>
+                        <option value="30">Oran</option>
+                        <option value="32">El Bayadh</option>
+                        <option value="33">Illizi</option>
+                        <option value="34">Bordj Bou Arréridj</option>
+                        <option value="35">Boumerdès</option>
+                        <option value="36">El Taref</option>
+                        <option value="37">Tindouf</option>
+                        <option value="38">Tissemsilt</option>
+                        <option value="39">El Oued</option>
+                        <option value="40">Khenchela</option>
+                        <option value="40">Souk Ahras</option>
+                        <option value="41">Souk Ahras</option>
+                        <option value="42">Tipasa</option>
+                        <option value="43">Mila</option>
+                        <option value="44">Aïn Defla</option>
+                        <option value="45">Naama</option>
+                        <option value="46">Aïn Témouchent</option>
+                        <option value="47">Ghardaïa</option>
+                        <option value="48">Relizane</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="date" id="start" name="date"
+                            min="2000-01-01" max="2100-12-31">
+                </div>
+                <div>
+                    <button type="submit">Filter</button>
+                </div>
+            </form>
+            </div>
+            <div class="element_container">
+                <div class="element_header hide_title_colis" >
+                    <div class="numb_afficher afficher_mult">
+                        <div>
+                            <label for="nmb_afficher">Afficher:</label>
+                            <select name="nmb_afficher" id="nmb_afficher">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                            <option value="ALL">ALL</option>
+                            </select>
+                            <label for="nmb_afficher">élément</label>
+                        </div>
+                        <div class="select_delivery">
+                            <!--{% if object_list %}-->
+                            <select name="Choices" id="">
+                                <option value="1">Choose a delivery man</option>
+                                <option value="3">Suspendre les colis sélectionnés</option>
+                                <option value="0">Delete selected entries</option>
+                            </select>
+                            <button type = "submit">submit</button>
+                            <!-- {% endif %}-->
+                        </div>
+                    </div>
+                    <div class="titles_colis form1">
+                        <div>
+                            <h4>info colis</h4>
+                        </div>
+                        <div>
+                            <h4>ADR destinataire</h4>
+                        </div>
+                        <div>
+                            <h4>info destinataire</h4>
+                        </div>
+                        <div>
+                            <h4>RQ et produit</h4>
+                        </div>
+                        <div>
+                            <h4>Montant</h4>
+                        </div>
+                    </div>
+                    <div class="titles_colis form2">
+                        <div>
+                            <h4>info colis</h4>
+                        </div>
+                        <div>
+                            <h4>Adr Des</h4>
+                        </div>
+                        <div>
+                            <h4>info DES</h4>
+                        </div>
+                        <div>
+                            <h4>RQ & PR</h4>
+                        </div>
+                        <div>
+                            <h4>Montant</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="element_desc">
+                    <!--{% for user in users %}-->
+                    <div class="ele_container table_element">
+                        <div class="mod_ele">
+                            <input type = 'checkbox'  name = 'selection' class="checkbox_select">
+                        </div>
+                        <div class="autre_ele">
+                            <div class="ele">
+                                <p><i class="fa fa-id-badge" aria-hidden="true"></i> num colis</p>
+                                <p><i class="fa fa-archive" aria-hidden="true"></i>  Nmb commande</p>
+                                <p><i class="fa fa-truck" aria-hidden="true"></i> type</p>
+                                <p><i class="fa fa-calendar" ></i> temps</p>
+                            </div>
+                            <div>
+                                <p><i class="fa fa-map" aria-hidden="true"></i> wilaya</p>
+                                <p><i class="fa fa-location-arrow" aria-hidden="true"></i> commune</p>
+                                <p><i class="fa fa-map-marker" aria-hidden="true"></i> adresse</p>
+                            </div>
+                            <div>
+                                <p><i class="fa fa-id-card" aria-hidden="true"></i> Nom</p>
+                                <p><i class="fa fa-mobile" aria-hidden="true"></i> num tel</p>
+                            </div>
+                            <div>
+                                <p><i class="fa fa-comment" aria-hidden="true"></i> RQ</p>
+                                <p><i class="fa fa-box"></i> produit</p>
+                                <p><i class="fa fa-cubes" aria-hidden="true"></i> pois</p>
+                            </div>
+                            <div class="ele">
+                                <p><i class="fa fa-dollar-sign" aria-hidden="true"></i> prix</p>
+                            </div>
+                        </div>
+                        <div class="mod_ele mod_ele2">
+                               
+                        </div>
+                    </div>
+                    <!--{% empty %}-->
+                    <div class="ele_container aucune_element">
+                        <p> sorry, no queries match your search </p>
+                    </div>
+                    <!--{% endfor %}-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- imprimer container -->
+    <script src="./autre_admin.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+<!--
+      <div class="mod_ele delivery_mod">
+                                <form method="POST" action="" class="choose_delivery_form">
+                                    {% csrf_token %}
+                                    <div class="time_name">
+                                        <label>Choose a deadline</label>
+                                        <input type = 'date' name = 'date'>
+                                        <input type = 'time' name = 'time' >
+                                    </div>
+                                    <button type="submit" name = 'submit' value = {{user.id}} >Choose delivery-man</button>
+                                    </form>
+                            </div>
+-->

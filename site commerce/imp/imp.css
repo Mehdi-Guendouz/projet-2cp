@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Paytone+One&family=Roboto&display=swap');
+
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.body_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180vh;
+    width: 200vh;
+    background-color: #E6E6E6;
+}
+
+.imprimer_container{
+    height: 140vh;
+    width: 120vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.logo_info {
+    height: calc(140vh - 90%);
+    width: 110vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    border-bottom: 2px black solid;
+}
+
+.logo_info a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.logo_info .logo{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_info .logo img{
+    height: 100px;
+    width: 100px;
+}
+
+.logo_info .contanct{
+    height: 100%;
+    width: 50%;
+    text-align: center;
+}
+
+.logo_info .contanct p{
+    width: 100%;
+    height: 33%;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.logo_info .info_wilaya{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_colis {
+    height: calc(140vh - 60%);
+    width: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px black solid;
+}
+
+.info_colis .description_colis{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.info_colis .description_colis p{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.pois_type_container {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.qr_code{
+    width: 70%;
+    text-align: center;
+}
+
+.qr_code img{
+    height: 180px;
+    width: 180px;
+}
+
+.pois_type_container .type{
+    padding: 10px;
+    background-color: #E6E6E6;
+    width: 45%;
+    margin-right: 20px;
+    text-align: center;
+    border: 2px black solid;
+}
+
+.info_expediteur {
+    height: calc(140vh - 90%);
+    width: 110vh;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.info_expediteur div{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+
+.footer_imprimer{
+    height: calc(140vh - 60%);
+    width: 110vh;
+    margin-top: 10px;
+    border-top: 3px black dashed ;
+}
+
+.footer_imprimer h2{
+    margin: 10px 0px;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer_imprimer p{
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+}

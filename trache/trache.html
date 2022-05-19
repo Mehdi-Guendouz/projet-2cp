@@ -1,0 +1,214 @@
+
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="steps_items">
+                        <img src="./img/Telecommuting-pana.svg" alt="reservation">
+                        <p>Order directly from the application</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="steps_items">
+                        <img src="./img/Take Away-pana.svg" alt="" id="second_img">
+                        <p>Your order will be immediately collected by our courier</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="steps_items">
+                        <img src="./img/Coronavirus Delivery Preventions-pana.svg" alt="">
+                        <p>Pick up delivery at your door</p>
+                    </div>
+                </div>   
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        
+
+
+ <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+ <script>
+     var swiper = new Swiper(".mySwiper", {
+       effect: "coverflow",
+       grabCursor: true,
+       centeredSlides: true,
+       slidesPerView: "auto",
+       coverflowEffect: {
+         rotate: 50,
+         stretch: 0,
+         depth: 100,
+         modifier: 1,
+         slideShadows: true
+       },
+       pagination: {
+         el: ".swiper-pagination"
+       }
+     });
+   </script>
+
+
+
+
+.swiper_section {
+    margin-top: 50px;
+    height: 25%;
+  }
+
+.swiper_section {
+    
+    font-size: 14px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.mySwiper {
+    height: 70%;
+    width: 80%;
+}
+.swiper-wrapper{
+    width: 50%;
+    height: 50%;
+    border-radius: 25px;
+}
+
+.swiper-slide {
+    height: 50%;
+    width: 50% ;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.steps_items{
+    background-color: var(--gray-c);
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.steps_items img{
+    height: 100%;
+    width: 50%;
+    
+}
+
+.steps_items p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    color: var(--white);
+    font-size: 30px;
+    background-color: var(--violet_clair);
+    font-weight: bold;
+    
+}
+
+
+const btnAjouter = document.querySelector(".hidden_ele_ajouter")
+const btnLivre = document.querySelector(".hidden_ele_livre")
+const btnRetour = document.querySelector(".hidden_ele_retour")
+
+
+const ajouter = document.querySelector(".sub_ajouter")
+const livre = document.querySelector(".sub_livre")
+const retour = document.querySelector(".sub_retour")
+
+btnAjouter.addEventListener("click", ()=>{
+    ajouter.classList.toggle('hide_sub')
+})
+
+btnLivre.addEventListener("click", ()=>{
+    livre.classList.toggle('hide_sub')
+})
+
+btnRetour.addEventListener("click", ()=>{
+    retour.classList.toggle('hide_sub')
+})
+
+
+.menu .sub_ajouter.hide_sub {
+    display: none;
+}
+
+.menu .sub_livre.hide_sub {
+    display: none;
+}
+
+.menu .sub_retour.hide_sub {
+    display: none;
+}
+
+
+
+
+<body>
+    <div class="menu">
+        <h3>world express</h3>
+        <ul>
+            <li>
+                <a href="#" title="Ajouter" class="hidden_ele_ajouter"><i class="fa fa-cloud-upload-alt"></i> Ajouter <i class="fa fa-angle-down"> </i></i></a>
+                <ul class="sub sub_ajouter hide_sub">
+                    <li>
+                        <a href="" title="Ajouter"> Ajouter un colis</a>
+                    </li>
+                    <li>
+                        <a href="" title="AjouterP"> Ajouter plusieurs colis</a>
+                    </li>
+                    <li>
+                        <a href="" title="Historique"> Historique de l'importation</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="pret a expeder"> <i class="fa fa-check"></i> pret a expeder  </a>
+                <a href="En ramassage"> <i class="fa fa-car"></i> En ramassage </a>
+                <a href="En transit"> <i class="fa fa-exchange-alt"></i>En transit </a>
+                <a href="En En Hub"> <i class="fa fa-home"> </i> En Hub</a>
+                <a href="En En livrasion"> <i class="fa fa-car"> </i> En livraison</a>
+                <a href="Suspendus "> <i class="fa fa-ban"> </i> Suspendus</a>
+            </li>
+            <li>
+                <a href="#" title="livre" class="hidden_ele_livre"><i class="fa fa-angle-down"></i> Livre</a>
+                <ul class="sub sub_livre hide_sub">
+                    <li>
+                        <a href="#" title="non encaisse">non encaisse</a>
+                    </li>
+                    <li>
+                        <a href="#" title="encaisse non paye"> encaisse non paye</a>
+                    </li>
+                    <li>
+                        <a href="#" title="paiement pret"> paiement pret</a>
+                    </li>
+                    <li>
+                        <a href="#" title="historique des paiment recus"> historique des paiements recus</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" title="retour" class="hidden_ele_retour"> <i class="fa fa-angle-down"></i>Retour</a>
+                <ul class="sub sub_retour hide_sub">
+                    <li>
+                        <a href="" title="Chez livreur">Chez livreur</a>
+                    </li>
+                    <li>
+                        <a href="" title="retours en traitement">retours en traitement</a>
+                    </li>
+                    <li>
+                        <a href="" title="retours prets"> retours prets</a>
+                    </li>
+                    <li>
+                        <a href="" title="historique retours recus"> historique retours recus</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script src="./main.js"></script>
+</body>

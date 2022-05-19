@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <link rel="stylesheet" href="sign.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Lato:wght@300&family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>  
+</head>
+<body>
+<div class="container">
+   <div class="forms-container">
+      <div class="signin-signup"> 
+        <div class="title">
+            <h2>sign in</h2>
+        </div>
+         <form method="post" action="" class="sign-in-form">
+            <!--{% csrf_token %}-->
+            <div class="input_container">
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Create A Username (only letters and numbers)" Required>
+                </div>
+                
+                <!--{% for message in messages %}
+                <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">  
+                   {% if 'username' in message.tags %}
+                    <strong>Message:</strong>{{ message }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                   {% endif %}
+                </div>
+               {% endfor %}-->
+            </div>
+            <div class="first_last_container input-field">
+                <i class="fas fa-user"></i>
+                <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" Required>
+            </div>
+            <div class="first_last_container input-field">
+                <i class="fas fa-user"></i>
+                <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name" Required>
+            </div>
+            <div class="input_container">
+                <div class="input-field">
+                    <i class="fa fa-envelope" ></i>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" Required>
+                </div>
+                <!--{% for message in messages %}
+                    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">  
+                       {% if 'email' in message.tags %}
+                        <strong>Message:</strong>{{ message }}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                        </button>
+                       {% endif %}
+                    </div>
+               {% endfor %}-->
+            </div>
+            <div class="first_last_container input-field">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" class="form-control" id="pass1" name="pass1" placeholder="Create Your Password" Required>
+            </div>
+            <div class="input_container">
+                <div class="input-field">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <input type="password" class="form-control" id="pass2" name="pass2" placeholder="Confirm Your Password" Required>
+                </div>
+                <!--{% for message in messages %}
+                    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">  
+                        {% if 'pass' in message.tags %}
+                        <strong>Message:</strong>  {{ message }}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+                    -->
+            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+      </div>
+   </div>       
+        
+    <div class="panels-container">
+         <div class="panel left-panel">
+            <div class="content">
+               <h1>One of us?</h1>
+               <button class="btn transparent" id="sign-in-button"><a href="./login.html">Log In</a></button>
+            </div>
+         </div>
+     </div>
+</div>
+<script src="sign.js"></script>
+</body>
+</html>

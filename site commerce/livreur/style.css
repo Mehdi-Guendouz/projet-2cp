@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Paytone+One&family=Roboto&display=swap');
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --gray : #FBFBFB;
+    --violet: #6E56B1;
+    --violet_clair:#7157BA;
+    --black-c : #362F4E;
+    --black : black;
+    --gray-c : #E2E8F1;
+    --orang-c : #FF725E;
+    --white : #fff;
+    --dark- : #282d32;
+    --transition: all 0.3s linear;
+    --main-color-red : #AF1E1D;
+    --second-color-blue : #21354B;
+    --third-color-red_clair : #D03925;
+    --livreur-color : #ffd31d;
+    --livreue-second-color : #fda831;
+}
+
+body{
+    background-color: var(--gray);
+    margin: 0;
+    padding: 0;
+    height: 90vh;
+}
+
+
+#livreur {
+    color: var(--livreue-second-color);
+}
+
+#text_font_titles{
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Paytone One', sans-serif;
+}
+
+#text_font_paragraph{
+    font-family: 'Libre Baskerville', serif;
+}
+
+#text_font_new {
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+.menu{
+    background-color: var(--gray);
+    width: 23%;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    box-shadow: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    display: none;
+    -webkit-box-shadow: 3px 0px 21px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 0px 21px -1px rgba(0,0,0,0.75);
+    box-shadow: 3px 0px 21px -1px rgba(0,0,0,0.75);
+}
+
+.toggle-button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.toggle-button .bar {
+    height: 5px;
+    width: 100%;
+    background-color: var(--second-color-blue);
+    opacity: .8;
+    border-radius: 10px;
+}
+
+.navbar_container{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo_main{
+    width: 80%;
+    height: 100%;
+    order: 2;
+    margin-left: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hide_navbar .navbar_container .logo_main{
+    display: none;
+}
+
+.hide_navbar .navbar_container .toggle_bar{
+    display: none;
+}
+
+.hide_navbar .menu{
+    display: flex;
+}
+
+.logo_main h3{
+    color: var(--second-color-blue);
+}
+
+.toggle_bar{
+    order: 1;
+    margin-left: 10px;
+}
+
+.toggle_ele li{
+    margin-left: 15px;
+    width: 100%;
+}
+
+.toggle_ele{
+    margin: 15px 0px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.toggle_ele li a:hover{
+    opacity: 1;
+}
+
+.toggle_ele li a{
+    opacity: .9;
+}
+
+.menu .logo h3 {
+    text-align:center;
+    width: 100%;
+    color: var(--second-color-blue);
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+.menu .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+}
+
+.menu .close img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+
+.menu li a {
+    position: relative;
+    display:block;
+    float:left;
+    width:200px;
+    height:25px;
+    padding: 10px; 
+    color: var(--second-color-blue);
+}
+
+.menu i {
+    margin-right: 5px;
+    color: var(--second-color-blue);
+}
+ 
+.menu .hide_sub .sub{
+    display: none;
+}
+
+.menu:hover{
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+.bar_items {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.bar_ul {
+    height: 100%;
+    width: 80%;
+    
+}
+
+.profil{
+    text-align: center;
+    justify-self: flex-end;
+    height: 60;
+    width: 100%;
+}
+
+.profil img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.nav_hover{
+    content: "";
+    left: 0;
+    top: 0;
+    background-color: var(--livreue-second-color);
+    width: 2px;
+    height: 0%;
+    position: absolute;
+    bottom: 0;
+    transition: .5s;
+}
+
+.current_place .nav_hover{
+    height: 90%;
+}
+
+
+.container{
+    float: right;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.picture_container{
+    height: 80%;
+    width: 45%;
+    order: 2;
+}
+
+.picture_container div img{
+    height: 100%;
+    width: 100%;
+}
+
+.picture_container div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description_container{
+    height: 70%;
+    width: 45%;
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text_container {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--second-color-blue);
+}
+
+.text_container h1{
+    color: var(--second-color-blue);
+    font-size: 45px;
+}
+
+.order_container{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.order_container a{
+    background-color: var(--livreue-second-color);
+    color: var(--white);
+    padding: 15px 25px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.order_container a:hover{
+    background-color: var(--second-color-blue);
+    transition: .5s linear;
+}
+
+
+
+@media (max-width : 992px){
+    .menu{
+        width: 30%;
+    }
+
+    .container{
+        justify-content: center;
+    }
+
+    .description_container{
+        width: 55%;
+        margin-left: 10px;
+    }
+
+    .picture_container{
+        width: 40%;
+        height: 100%;
+    }
+
+}
+
+
+@media (max-width : 688px){
+    .menu{
+        width: 45%;
+    }
+
+    .container{
+        justify-content: center;
+    }
+
+    .description_container{
+        width: 90%;
+    }
+
+    .picture_container{
+        width: 40%;
+        display: none;
+    }
+
+}
+

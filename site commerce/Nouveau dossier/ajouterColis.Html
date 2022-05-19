@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./autre.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>  
+
+</head>
+<body>
+    <div class="nav_menu_container">
+        <div class="navbar_container">
+            <div class="logo_main">
+                <a href="./ecotrack1.html"><h3 id="text_font_new">world express</h3></a>
+            </div>
+            <div class="toggle_bar">
+                <a href="#" class="toggle-button" id="toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="logo">
+                <a href="#" class="close"><img src="../img/exit_icon.png" alt=""></a>
+                <a href="./ecotrack1.html"><h3 id="text_font_new">world express</h3></a>
+            </div>
+            <div class="bar_items" id="text_font_paragraph">
+                <ul class="bar_ul">
+                <li class="hide_sub">
+                    <a href="#" title="Ajouter" class="hidden_ele a_hover"><span class="nav_hover"></span><i class="fa fa-cloud-upload-alt"></i> Ajouter <i class="fa fa-angle-down "> </i></i></a>
+                    <ul class="sub toggle_ele">
+                        <li>
+                            <a href="./ajouterColis.Html" title="Ajouter" class="a_hover"><span class="nav_hover"></span>Ajouter un colis</a>
+                        </li>
+                        <li>
+                            <a href="./historique_client.html" title="Historique" class="a_hover"><span class="nav_hover"></span>Historique colis</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./pret-a-expeder.html" class="a_hover"><span class="nav_hover"></span> <i class="fa fa-check"></i> pret a expeder<span class="ajouter_notif hide_notif"></span> <span class="ajouter_notif hide_notif"></span></a>
+                    <a href="./En_ramassage.html" class="a_hover"><span class="nav_hover"></span> <i class="fa fa-car"></i> En ramassage </a>
+                    <a href="./En_transit.html" class="a_hover"><span class="nav_hover"></span> <i class="fa fa-exchange-alt"></i>En transit </a>
+                    <a href="./En_hub.html" class="a_hover"><span class="nav_hover"></span> <i class="fa fa-home"> </i> En Hub</a>
+                    <a href="./En-livraison.html" class="a_hover"><span class="nav_hover"></span> <i class="fa fa-car"> </i> En livraison</a>
+                    <a href="./Suspendus.html" class="a_hover"><span class="nav_hover"></span> <i class="fa fa-ban"> </i> Suspendus</a>
+                </li>
+                <li class="hide_sub">
+                    <a href="#" title="livre" class="hidden_ele a_hover"><span class="nav_hover"></span> <i class="fa fa-angle-down"></i> Livre</a>
+                    <ul class="sub toggle_ele">
+                        <li>
+                            <a href="./payer.html" title="non encaisse" class="a_hover"><span class="nav_hover"></span>payé</a>
+                        </li>
+                        <li>
+                            <a href="./nonpayer.html" title="encaisse non paye" class="a_hover"><span class="nav_hover"></span>non payé</a>
+                        </li>
+                        <li>
+                            <a href="./historique_payement.html" title="historique des paiment recus" class="a_hover"><span class="nav_hover"></span> historique des paiements</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hide_sub">
+                    <a href="#" title="retour" class="hidden_ele a_hover"><span class="nav_hover"></span> <i class="fa fa-angle-down"></i>Retour</a>
+                    <ul class="sub toggle_ele">
+                        <li>
+                            <a href="./chez_livreur.html" title="Chez livreur" class="a_hover"><span class="nav_hover"></span>Chez livreur</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="a_hover"><span class="nav_hover"></span><i class="fa fa-paper-plane" aria-hidden="true"></i>Feedback</a>
+                </li>
+                </ul>
+            </div>
+            <div class="profil">
+                <a href="#"><img src="../img/profile_pic.png" alt="Profil"></a>
+            </div>
+        </div>
+    </div>     
+    <div class="ajouter_container">
+        <div class="description">
+            <h3 id="text_font_titles">ajouter un colis</h3>
+            <p id="text_font_paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae assumenda nostrum quidem atque delectus.</p>
+        </div>
+        <div class="form_container">
+            <div class="form_container">
+            <div class="ajouter_forms">
+                <form class="ajouter_colis" data-form-ajouter>
+                    <div class="destinataire">
+                        <div class="destitel">
+                            <h3>Déstinataire:</h3>
+                        </div>
+                        <div class="desform">
+                            <div class="name name_container">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <input type="text" name="Nom_prenom" id="name" placeholder="Nom et Prénom" required>
+                            </div>
+                            <div class="phone_container name">
+                                <div class="phone">
+                                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                                    <input type="tel" name="phone1" id="phone_num1" placeholder="Phone numbre">
+                                </div>
+                                <div class="phone">
+                                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                                    <input type="tel" name="phone2" id="phone_num2" placeholder="Phone numbre">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info_adresse">
+                        <div class="info_title">
+                            <h3>Adresse Info:</h3>
+                        </div>
+                        <div class="info_input">
+                            <div class="select_wilaya">
+                                <div>
+                                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                                <select name="user_wilaya" id="wilaya_info" onchange="addCommun()">
+                                    <option value="0">-- Select Willaya --</option>
+                                    <option value="1">Adrar</option>
+                                    <option value="2">Chlef</option>
+                                    <option value="3">Laghouat</option>
+                                    <option value="4"> Oum el-Bouaghi</option>
+                                    <option value="5">Batna</option>
+                                    <option value="6">Béjaïa</option>
+                                    <option value="7">Biskra</option>
+                                    <option value="8">Béchar</option>
+                                    <option value="9">Blida</option>
+                                    <option value="10">Bouira</option>
+                                    <option value="11">Tamanghasset</option>
+                                    <option value="12">Tébessa</option>
+                                    <option value="13">Tlemcen</option>
+                                    <option value="14">Tiaret</option>
+                                    <option value=" 15">Tizi Ouzou</option>
+                                    <option value="16">Algiers</option>
+                                    <option value="17">Djelfa</option>
+                                    <option value="18">Jijel</option>
+                                    <option value="19">Sétif</option>
+                                    <option value="20">Saïda</option>
+                                    <option value="21">Skikda</option>
+                                    <option value="22">Sidi Bel Abbes</option>
+                                    <option value="23">Annaba</option>
+                                    <option value="24">Guelma</option>
+                                    <option value="25">Constantine</option>
+                                    <option value="26">Médéa</option>
+                                    <option value="27">Mostaganem</option>
+                                    <option value="28">M'Sila</option>
+                                    <option value="29">Mascara</option>
+                                    <option value="30">Ouargla</option>
+                                    <option value="30">Oran</option>
+                                    <option value="32">El Bayadh</option>
+                                    <option value="33">Illizi</option>
+                                    <option value="34">Bordj Bou Arréridj</option>
+                                    <option value="35">Boumerdès</option>
+                                    <option value="36">El Taref</option>
+                                    <option value="37">Tindouf</option>
+                                    <option value="38">Tissemsilt</option>
+                                    <option value="39">El Oued</option>
+                                    <option value="40">Khenchela</option>
+                                    <option value="40">Souk Ahras</option>
+                                    <option value="41">Souk Ahras</option>
+                                    <option value="42">Tipasa</option>
+                                    <option value="43">Mila</option>
+                                    <option value="44">Aïn Defla</option>
+                                    <option value="45">Naama</option>
+                                    <option value="46">Aïn Témouchent</option>
+                                    <option value="47">Ghardaïa</option>
+                                    <option value="48">Relizane</option>
+                                </select>
+                                </div>
+                                <div>
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <select name="commune_wilaya" id="commune">
+                                        <option value="0">Select willaya first</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="adresse_txt">
+                                <i class="fa fa-address-card" aria-hidden="true"></i>
+                                <input type="text" name="adresse" id="adresse" placeholder="Adresse">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="commande_info">
+                        <div class="cmdinfo_title">
+                            <h3>Sur La Commande:</h3>
+                        </div>
+                        <div class="cmdinfo_input">
+                            <div class="cdm_ele">
+                                <i class="fa fa-dollar-sign" aria-hidden="true"></i>
+                                <input type="number" name="price" id="price" placeholder="Montant a collecter">
+                                <label for="price" class="lb2">DA</label>
+                            </div>
+                            <div class="cdm_ele">
+                                <i class="fa fa-cubes" aria-hidden="true"></i>
+                                <input type="number" name="poids" id="poids" placeholder="Poids">
+                                <label for="poids" class="lb2">Kg</label>
+                            </div>
+                            <div class="cdm_ele">
+                                <i class="fa fa-barcode" aria-hidden="true"></i>
+                                <input type="number" name="nmb_cmd" id="nmb_cmd" placeholder="Nombre de la commande">
+                            </div>
+                            <div class="remarque_txt">
+                                <i class="fa fa-comment" aria-hidden="true"></i>
+                                <input type="text" placeholder="vos remarque a propos de l'envoi">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="type_delivery">
+                        <div class="type_title">
+                            <h3>Type d'envoi:</h3>
+                        </div>
+                        <div class="type_select">
+                            <div class="type_select_ele">
+                                <div class="type_input">
+                                    <label for="type_de_livraison">Type de préstation:</label>
+                                    <select name="type livraison" id="type_livraison">
+                                        <option value="0">select one of this</option>
+                                        <option value="stop desk">Stop Desk</option>
+                                        <option value="a domicile">A domicele</option>
+                                    </select>
+                                </div>
+                                <div class="type_input">
+                                    <label for="type_de_livraison">Type d'envoi:</label>
+                                    <select name="type livraison" id="type_livraison">
+                                        <option value="0">select one of this</option>
+                                        <option value="livraison">livraison</option>
+                                        <option value="échange">échange</option>
+                                        <option value="pick up">pick up</option>
+                                        <option value="recouverement">recouverement</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="type_desc">
+                                <i class="fa fa-microphone"></i>
+                                <input type="text" placeholder="décriver le produit">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit_btn">    
+                        <button type="submit" class="sbmit"><i class="fa fa-upload"></i> Inserer le colis</button>
+                        <button type="reset" class="rest">Reset</button>
+                    </div>
+                </form>
+            </div>
+            <div class="form_img">
+                <img src="../img/deliveryman.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="./ajouterColis.js"></script>
+</body>
+</html>
