@@ -145,6 +145,12 @@
                             </select>
                             <label for="nmb_afficher">élément</label>
                         </div>
+                        <div class="select_delivery">
+                            <!--{% if object_list %}-->
+                            <label for="submit">valider selected products: </label>
+                            <button type = "submit">Valider</button>
+                            <!-- {% endif %}-->
+                        </div>
                     </div>
                     <div class="titles_colis form1">
                         <div>
@@ -182,12 +188,9 @@
                     </div>
                 </div>
                 <div class="element_desc">
-                    <form method="POST" action="" class="form_recuperer">
-                        <label for="submit">valider selected products: </label>
-                        <button type = "submit">Valider</button>
-                    </form>
                     <!--{% for user in users %}-->
                     <div class="ele_container table_element">
+                        <form action=""></form>
                         <div class="mod_ele">
                             <input type = 'checkbox'  name = 'selection' class="checkbox_select">
                         </div>
