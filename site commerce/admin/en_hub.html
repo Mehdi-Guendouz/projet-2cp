@@ -179,6 +179,7 @@
                         </div>
                         <div class="select_delivery">
                             <!--{% if object_list %}-->
+                            <form action="">
                             <select name="Choices" id="">
                                 <option value="1">Choose a delivery man</option>
                                 <option value="3">Suspendre les colis sélectionnés</option>
@@ -224,14 +225,6 @@
                     </div>
                 </div>
                 <div class="element_desc">
-                    <form method="POST" action="" class="form_delivery">
-                            <select name="Choices" id="">
-                                <option value="1">Choose a delivery man</option>
-                                <option value="3">Suspendre les colis sélectionnés</option>
-                                <option value="0">Delete selected entries</option>
-                            </select>
-                        <button type = "submit">submit</button>
-                    </form>
                     <!--{% for user in users %}-->
                     <div class="ele_container table_element">
                         <div class="mod_ele">
@@ -271,6 +264,7 @@
                         <p> sorry, no queries match your search </p>
                     </div>
                     <!--{% endfor %}-->
+                   </form>
                     </div>
                 </div>
             </div>
