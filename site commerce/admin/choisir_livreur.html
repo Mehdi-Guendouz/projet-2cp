@@ -145,11 +145,15 @@
                         <option value="48">Relizane</option>
                     </select>
                 </div>
+                <div>
+                    <button type="submit" class = "filtrBtn">Filter</button>
+                </div>
+                </form>
                 <div class="filtre_noslivreur">
                     <form method="POST" action="" class="form_list_livreur">
                         <!--{% csrf_token %}-->
                         <input type = "texte" name = 'username' value = '' placeholder="Username" class="username">
-                    <button type="submit">Search</button>
+                        <button type="submit">Search</button>
                     </form>
                 </div>
                 <div class="filtre_noslivreur">
@@ -176,13 +180,19 @@
                     </div>
                     <div class="titles_colis form1">
                         <div>
-                            <h4>ID</h4>
+                            <h4>ID user</h4>
                         </div>
                         <div>
                             <h4>Username</h4>
                         </div>
                         <div>
-                            <h4>Wilaya</h4>
+                            <h4>first name</h4>
+                        </div>
+                        <div>
+                            <h4>last name</h4>
+                        </div>
+                        <div>
+                            <h4>wilaya name</h4>
                         </div>
                     </div>
                     <div class="titles_colis form2">
@@ -203,19 +213,33 @@
                          <div class="mod_ele">
                              
                          </div>
-                         <div class="autre_ele">
-                             <div class="ele">
-                                <p><i class="fa fa-id-card" aria-hidden="true"></i> Nom</p>
-                             </div>
-                             <div>
-                                 <p><i class="fa fa-id-card" aria-hidden="true"></i> Nom</p>
-                             </div>
-                             <div>
-                                <p><i class="fa fa-map" aria-hidden="true"></i> wilaya</p>
-                             </div>
+                         <div class="autre_ele ">
+                            <div >
+                                <p><i class="fa fa-id-card" aria-hidden="true"></i> {{ user.id }}</p>
+                            </div>
+                            <div >
+                                <p><i class="fa fa-id-card" aria-hidden="true"></i> {{ user.username }}</p>
+                            </div>
+                            <div>
+                                <p><i class="fa fa-id-card" aria-hidden="true"></i> {{ user.first_name }}</p>
+                            </div>
+                            <div>
+                                <p><i class="fa fa-id-card" aria-hidden="true"></i> {{ user.last_name }}</p>
+                            </div>
+                            <div>
+                                <p><i class="fa fa-map" aria-hidden="true"></i> {{ user.wilaya }}</p>
+                            </div>
                          </div>
                          <div class="mod_ele mod_ele2">
-                            
+                            <div class="mod_ele delivery_mod">
+                                    <form method="POST" action="" class="choose_delivery_form">
+                                        <!--{% csrf_token %}-->
+                                    <label>Choose deadline</label>
+                                    <input type = 'date' name = 'date'  >
+                                    <input type = 'time' name = 'time' >
+                                    <button type="submit" name = 'submit' value = '{{ user.id }}' >Choose</button>
+                                    </form>
+                            </div>
                          </div>
                      </div>
                      <!--{% empty %}-->

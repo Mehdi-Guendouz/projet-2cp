@@ -177,16 +177,17 @@
                             </select>
                             <label for="nmb_afficher">élément</label>
                         </div>
-                        <div class="select_delivery">
-                            <!--{% if object_list %}-->
-                            <select name="Choices" id="">
-                                <option value="1">Choose a delivery man</option>
-                                <option value="3">Suspendre les colis sélectionnés</option>
-                                <option value="0">Delete selected entries</option>
-                            </select>
-                            <button type = "submit">submit</button>
-                            <!-- {% endif %}-->
-                        </div>
+                        <form method="POST" action="{% url 'selectionner_hub' %}" class="form_hub">
+                           <!--{% csrf_token %}-->
+                            <div class="select_delivery">
+                                <select name="Choices" id="">
+                                    <option value="1">Choose a delivery man</option>
+                                    <option value="3">Suspendre les colis sélectionnés</option>
+                                    <option value="0">Delete selected entries</option>
+                                </select>
+                                <button type = "submit">submit</button>
+                            </div>
+                        
                     </div>
                     <div class="titles_colis form1">
                         <div>
@@ -263,6 +264,7 @@
                         <p> sorry, no queries match your search </p>
                     </div>
                     <!--{% endfor %}-->
+                </form>
                     </div>
                 </div>
             </div>

@@ -597,15 +597,14 @@ body{
     border: 1px var(--second-color-blue) solid;
 }
 
-.element_container .element_header .afficher_mult .select_delivery button{
-    margin-left: 10px;
-    margin-bottom: 5px;
+.element_container .element_header .afficher_mult .form_hub .select_delivery button{
+    margin: 0px 20px 5px 10px;
     padding: 5px;
     color: var(--second-color-blue);
 }
 
-.element_container .element_header .afficher_mult .select_delivery select{
-    width: 70%;
+.element_container .element_header .afficher_mult .form_hub .select_delivery select{
+    width: 200px;
     border: 1px var(--second-color-blue) solid;
 }
 /* historique part*/
@@ -708,6 +707,7 @@ body{
  .table_element .table_nos_livreur{
      justify-content: space-around;
  }
+
 
  .table_element  .autre_ele div{
     height: 100%;
@@ -836,6 +836,19 @@ body{
 .choose_delivery_form{
     height: 100%;
     color: var(--second-color-blue);
+    text-align: center;
+}
+
+.mod_ele .choose_delivery_form button{
+    background-color: var(--green);
+    border: 1px var(--second-color-blue) solid;
+    color: var(--white);
+}
+
+.mod_ele .choose_delivery_form input{
+    height: 10px;
+    margin: 2px 0px;
+    padding: 4px;
 }
 
 .time_name{
@@ -856,7 +869,6 @@ body{
     padding: 5px;
     border: 1px var(--second-color-blue) solid;
     outline: none;
-    
 }
 
 .delivery_mod button{
