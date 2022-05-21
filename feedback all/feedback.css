@@ -27,7 +27,7 @@ body{
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: url("img/bg.jpg") no-repeat center;
+	background: url("img/houses-gc6ae622d6_1920.jpg") no-repeat center;
 	background-size: cover;
 	filter: blur(50px);
 	z-index: -1;
@@ -44,7 +44,7 @@ body{
 }
 
 .left{
-	background: url("img/bg.jpg") no-repeat center;
+	background: url("img/Mail-cuate\ \(1\).png") no-repeat center;
 	background-size: cover;
 	height: 100%;
 }
@@ -66,9 +66,9 @@ h2:after{
     bottom: 0;
     transform: translateX(-50%);
     height: 4px;
-    width: 50px;
+    width: 75px;
     border-radius: 2px;
-    background-color: #2ecc71;
+    background-color: #D03925;
 }
 
 .field{
@@ -93,13 +93,13 @@ textarea{
 .btn{
 	width: 100%;
 	padding: 0.5rem 1rem;
-	background-color: #2ecc71;
+	background-color: #21354B;
 	color: #fff;
 	font-size: 1.1rem;
 	border: none;
 	outline: none;
 	cursor: pointer;
-	transition: .3s;
+	transition: .5s;
 }
 
 .btn:hover{
