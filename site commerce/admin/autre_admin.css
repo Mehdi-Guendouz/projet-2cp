@@ -1228,3 +1228,31 @@ body{
 
 }
 
+
+
+/* hada hwa li thatih f chaque css ta3 admin client w livreur (autre) bah yemchi filter moraba3at w html aki tel9ayeh f livreur .html wnhatlek cmnt tema*/
+
+.filtre_box_container{
+    height: auto;
+    width: 100%;
+    color: var(--second-color-blue);
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.filtre_box_container p{
+    background-color: var(--gray-c);
+    padding: 10px;
+    border: 1px var(--second-color-blue) solid;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.filtre_box_container div{
+    margin: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
