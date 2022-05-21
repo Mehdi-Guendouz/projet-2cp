@@ -25,6 +25,9 @@
     --green : #007f66;
 }
 
+.red{
+    color: var(--third-color-red_clair);
+}
 
 #second_red {
     color: var(--third-color-red_clair);
@@ -75,11 +78,19 @@ body select{
 
 .menu .logo h3 {
     text-align:center;
-    width: 100%;
-    color: var(--second-color-blue);
+    width: auto;
     font-weight: bold;
     text-transform: capitalize;
-    font-size: 25px;
+    font-size: 22px;
+    color: var(--second-color-blue);
+    letter-spacing: .05rem;
+    margin-left: 10px;
+}
+
+.menu .logo img{
+    height: 60px;
+    width: 60px;
+    display: none;
 }
 
 .menu .logo{
@@ -88,6 +99,12 @@ body select{
     justify-content: center;
     height: 10%;
     width: 100%;
+}
+
+.menu .logo a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu .close img{
