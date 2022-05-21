@@ -358,6 +358,7 @@ const nav_barr_container = document.querySelector(".head_container")
 const a_hover = document.querySelectorAll(".a_hover")
 const wilayaLoc = document.getElementById("wilaya_location")
 const locationNew = document.getElementById("place")
+const droneCntainer =  document.querySelector(".main_section_container")
 /*
 const pois = document.getElementById("pois_KG")
 const pricePR = document.getElementById("price_text")
@@ -374,6 +375,7 @@ function location_we(){
 
 navBtn.addEventListener("click",()=>{
     nav_barr_container.classList.toggle("hidde_nav")
+    droneCntainer.classList.toggle("drone_hide")
 })
 
 a_hover.forEach((element)=>{

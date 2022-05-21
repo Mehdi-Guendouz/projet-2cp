@@ -73,7 +73,6 @@ header{
     align-items: center;
     justify-content: center;
     width: 15%;
- 
 }
 
 .head_container {
@@ -197,8 +196,8 @@ header{
     margin-top: 25px;
     height: 20%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .main_picture_container {
@@ -222,13 +221,13 @@ header{
     font-weight: bold;
     word-spacing: 0.2em;
     letter-spacing: 4px;
-
 }
 
 .paragraphe_container{
     font-weight: bold;
     color: var(--second-color-blue);
     margin-top: 20px;
+    opacity: .9;
 }
 
 .main_order_button{
@@ -337,14 +336,6 @@ header{
     width: 90%;
     height: 100%;
 }
-/*.{
-    background-color: rgb(113, 87, 186,0.3);
-    border-radius: 25px;
-    border: 5px solid transparent;
-    -webkit-box-shadow: -8px -5px 35px -10px rgba(54,47,78,0.32);
-    -moz-box-shadow: -8px -5px 35px -10px rgba(54,47,78,0.32);
-    box-shadow: -8px -5px 35px -10px rgba(54,47,78,0.32);
-}*/
 
 .box_img {
     position: relative;
@@ -680,10 +671,489 @@ header{
 /* responsive */
 
 
+@media (min-width:1500px){
+    .head_container{
+        height: 8rem;
+    }
+
+    .logo_container img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .navbar_container{
+        
+        height: 100%;
+    }
+
+    .navbar_container ul{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
+
+    .contact_container{
+        height: 100%;
+    }
+    
+    .navbar_container ul li a{
+        font-size: 32px;
+    }
+
+    .contact_container  a:nth-child(2) {
+        font-size: 26px;
+        padding: 25px 20px;
+        margin: 0;
+        margin-left: 20px;
+    }
+    
+    
+    .contact_container  a:first-child{
+        font-size: 26px;
+        padding: 25px 20px;
+        margin: 0;
+    }
+    
+    /* second section */
+    .main_section_container{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .text_container{
+        width: 30%;
+    }
+
+    .paragraphe_titel_container{
+        font-size: 50px;
+    }
+
+    .paragraphe_container {
+        font-size: 26px;
+    }
+
+    .main_order_button button{
+        font-size: 24px;
+        padding: 35px 60px;
+        height: 100%;
+    }
+
+    /* desc section */
+    .description_container{
+        height: 75vh;
+        justify-content: center;
+    }
+
+    .text_desc_container{
+        height: 100%;
+        width: 60%;
+    }
+
+    .about_container{
+        width: 50%;
+        height: 50%;
+    }
+
+    .about_container h1{
+        height: 20%;
+        font-size: 70px;
+        margin:0;
+        margin-bottom: 15px;
+    }
+
+    .about_container p{
+        font-size: 45px;
+        width: 900px;
+        height: 80%;
+        margin: 0;
+    }
+
+    .picture_container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box_img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .box_img img{
+        height: 100%;
+        width: 100%;
+    }
+
+    /* sending container */
+
+    .sending_text_container h1{
+        font-size: 60px;
+    }
+
+    .sending_text_container p{
+        font-size: 40px;
+    }
+
+    .sending_steps_container h3{
+        font-size: 35px;
+    }
+
+    .sending_steps_container p{
+        font-size: 28px;
+    }
+
+    
+
+    /* our services */
+    .our_services_container{
+        height: 70vh;
+    }
+
+    .our_services_text{
+        height: 100%;
+    }
+
+    .our_services_border_decoration{
+        height: 80%;
+        width: 80%;
+    }
+    .picture_container_2 {
+        height: 100%;
+        width: 100%;
+    }
+
+    /* our location */
+
+    .location_container{
+        height: 50vh;
+        justify-content: center;
+    }
+
+    .location_text_container{
+        height: 30%;
+    }
+
+    .location_text_container h1{
+        font-size: 60px;
+    }
+
+    .select_wilaya label{
+        font-size: 50px;
+    }
+
+    .select_wilaya select{
+        font-size: 30px;
+    }
+
+    .location_container .localisation_container{
+        height: 200px;
+        width: 20%;
+    }
+
+    .localisation_container iframe{
+        height: 100%;
+        width: 100%;
+    }
+
+    /* footer */
+     
+    .footer-dark{
+        height: 30vh;
+    }
+
+    footer{
+        height: 100%;
+    }
+
+    .footer_container h3{
+        font-size: 35px;
+    }
+
+    .footer_container a,p{
+        font-size: 25px;
+    }
+
+    .social_media_container{
+        height: 20%;
+    }
+
+    .social_media img{
+        height: 50px;
+        width: 50px;
+    }
+    
+    .social_media {
+        background-color: var(--white);
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+    }
+
+    .copyright_container{
+        font-size: 25px;
+    }
+}
+
+
+@media (max-width:950px){
+    .navbar_container ul li a{
+        font-size: 10px;
+    }
+
+    .contact_container  a:nth-child(2) {
+        display: none;
+    }
+
+    .contact_container{
+        width: 10%;
+    }
+
+    .logo_container{
+        width: 5%;
+    }
+
+    .navbar_container ul{
+        width: 100%;
+    }
+}
 
 
 
-@media (max-width: 1150px) {
+@media (max-width:1200px){
+
+    .logo_container img {
+        height: 75px;
+        width: 75px;
+    }
+
+    .navbar_container{
+        height: 100%;
+        width: 90%;
+    }
+
+    .navbar_container ul{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .navbar_container ul li a{
+        font-size: 18px;
+    }
+
+    .contact_container  a:nth-child(2) {
+      font-size: 12px;
+    }
+    
+    
+    .contact_container  a:first-child{
+        font-size: 12px;
+    }
+    
+    /* second section */
+    .main_section_container{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .text_container{
+        width: 40%;
+        height: 100%;
+    }
+
+    .paragraphe_titel_container{
+        font-size: 20px;
+    }
+
+    .paragraphe_container {
+        font-size: 14px;
+    }
+
+    .main_order_button button{
+        font-size: 12px;
+        padding: 20px 30px;
+        height: 100%;
+    }
+
+    .main_picture_container{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main_picture_container img{
+        height: 80%;
+        width: 80%;
+    }
+
+    /* desc section */
+    .description_container{
+        justify-content: center;
+    }
+
+    .text_desc_container{
+        height: 100%;
+        width: 60%;
+    }
+
+    .about_container{
+        width: 50%;
+        height: 50%;
+    }
+
+    .about_container h1{
+        height: 20%;
+        font-size: 28px;
+        margin:0;
+        margin-bottom: 15px;
+    }
+
+    .about_container p{
+        font-size: 18px;
+        width: 400px;
+        height: 80%;
+        margin: 0;
+    }
+
+    .picture_container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box_img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .box_img img{
+        height: 100%;
+        width: 100%;
+    }
+
+    /* sending container */
+
+    .sending_container{
+        margin: 0;
+        height: 90vh;
+    }
+    .sending_text_container{
+        height: 30%;
+    }
+
+    .sending_steps_container{
+        height: 70%;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .sending_text_container h1{
+        font-size: 26px;
+    }
+
+    .sending_text_container p{
+        font-size: 16px;
+    }
+
+    .sending_steps_container h3{
+        font-size: 14px;
+    }
+
+    .sending_steps_container p{
+        font-size: 12px;
+    }
+
+    .sending_steps_container div{
+        height: 230px;
+        width: 25%;
+    }
+    
+    .steps_container .steps_img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .steps_img img{
+        height: 40px;
+        width: 40px;
+    }
+    /* our services */
+    .our_services_container{
+        height: 60vh;
+        justify-content: center;
+    }
+
+    .our_services_text{
+        height: 100%;
+        width: 100%;
+    }
+
+    .our_services_border_decoration{
+        height: 80%;
+        width: 80%;
+    }
+    .picture_container_2 {
+        height: 80%;
+        width: 100%;
+    }
+
+    .picture_our_container{
+        width: 50%;
+        height: 100%;
+    }
+    .picture_our_container{
+        height: 120%;
+        width: 120%;
+    }
+
+    /* our location */
+
+    .location_text_container h1{
+        font-size: 30px;
+    }
+
+    .select_wilaya label{
+        font-size: 24px;
+    }
+
+
+    .location_container .localisation_container{
+        height: 200px;
+        width: 20%;
+    }
+
+    .localisation_container iframe{
+        height: 100%;
+        width: 100%;
+    }
+
+    /* footer */
+
+    .footer_container h3{
+        font-size: 16px;
+    }
+
+    .footer_container a,p{
+        font-size: 12px;
+    }
+
+    .social_media_container{
+        height: 20%;
+    }
+
+    .copyright_container{
+        font-size: 10px;
+    }
+}
+
+
+
+@media (max-width: 820px) {
     .toggle-button{
         display: flex;
     }
@@ -700,7 +1170,7 @@ header{
 
     .navbar_container{
         align-self: flex-end;
-        height: 60%;
+        height: 50vh;
         width: 100%;
         background-color: var(--second-color-blue);
     }
@@ -730,19 +1200,26 @@ header{
     .contact_container{
         align-self: flex-end;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         height: 30%;
         width: 100%;
         background-color: var(--second-color-blue);
-        color: var(--white);                    
+        color: var(--white);             
     }
     .contact_container  a:first-child{
         color: var(--white);
+        margin-left: 32px;
     }
 
     .contact_container  a:first-child:hover {
         background-color: var(--third-color-red_clair);
         border: 3px var(--third-color-red_clair) solid;
+    }
+
+    .contact_container  a:nth-child(2){
+        display: flex;
+        border: 3px var(--third-color-red_clair) solid;
+        margin-left: 25px;
     }
 
     .contact_container  a:nth-child(2):hover {
@@ -757,49 +1234,64 @@ header{
         display: none;
     }
 
+    .drone_hide .drone{
+        display: none;
+    }
+
     /* main section */
 
-    .main_section_container ,.description_container{
-        flex-direction: column;
-    }
-
     .text_container {
-        width: 100%;
-        margin: 10px 0px 0px 0px;
-        align-items: center;
+        width: 40%;
+        height: 80%;
+        text-align: start;
     }
     .paragraphe_titel_container{
-        text-align: center;
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .paragraphe_container p{
+        font-size: 14px;
+    }
+
+    .main_order_button button{
+        font-size: 10px;
     }
     
     .main_order_button{
         margin: 0;
     }
 
-    .main_picture_container{
-        margin: 0px;
-        margin-top: 15px;
-        width: 100%;
-        text-align: center;
-    }
-
     .main_picture_container img{
-        height: 80%;
-        width: 80%;
+        height: 100%;
+        width: 100%;
     }
 
     /* description section */
 
+    .description_container{
+        height: 75vh;
+    }
+
     .text_desc_container{
-        width: 100%;
+        width: 50%;
         margin: 0;
-        
     }
 
     .picture_desc_container{
         margin: 0px;
         width: 100%;
         text-align: center;
+    }
+
+    .about_container{
+        width: 90%;
+        height: 50%;
+    }
+
+    .picture_desc_container{
+        height: 100%;
+        margin-top: 55px;
     }
 
     .picture_desc_container img{
@@ -811,23 +1303,266 @@ header{
     
 
 
-    .steps_container{
-        width: 40%;
-        margin-top: 20px;
+    .sending_container{
+        margin: 0;
+        height: 70vh;
+    }
+    .sending_text_container{
+        height: 20%;
+    }
+
+    .sending_steps_container{
+        height: 70%;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .sending_text_container h1{
+        font-size: 24px;
+    }
+
+    .sending_text_container p{
+        font-size: 14px;
+    }
+
+    .sending_steps_container h3{
+        font-size: 14px;
+    }
+
+    .sending_steps_container p{
+        font-size: 12px;
+    }
+
+    .sending_steps_container div{
+        height: 200px;
+        width: 25%;
+    }
+    
+    .steps_container .steps_img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .steps_img img{
+        height: 40px;
+        width: 40px;
     }
 
     /* our services section */
-    .our_services_container{
-        flex-direction: column;
-        margin-top: 230px;
-        
+
+    .picture_container_2{
+        width: 100%;
+        height: 80%;
+        margin-top: 30px;
     }
 
-    .our_services_text{
-        order: 1;
+    /* location */ 
+
+    .location_text_container h1{
+        font-size: 26px;
+    }
+
+    .location_text_container .select_wilaya label{
+        font-size: 24px;
+    }
+
+
+    .location_container .localisation_container{
+        height: 200px;
+        width: 20%;
+    }
+
+
+    /* footer container */
+
+    .footer_container h3{
+        font-size: 14px;
+    }
+
+    .footer_container a,p{
+        font-size: 12px;
+    }
+
+    .copyright_container{
+        font-size: 8px;
+    }
+
+}
+
+@media (max-width: 450px){
+    /* nav bar */
+    .logo_container{
+        height: 12%;
+    }
+    /* main section */
+    .main_section_container{
+        margin-top: -20px;
+        flex-direction: column;
+    }
+
+    .head_container{
+        margin: 0;
+        z-index: 10;
+    }
+
+    .toggle-button{
+        margin: 0;
+    }
+
+    .main_section_container .drone{
+       display: none;
+    }
+
+    .text_container {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .main_order_button {
+        z-index: 2;
+    }
+
+    .paragraphe_titel_container{
+        font-size: 18px;
+    }
+
+    .paragraphe_container p{
+        font-size: 10px;
+    }
+
+    .main_order_button button{
+        font-size: 8px;
+    }
+    
+    .main_picture_container{
+        margin-top: 20px;
         width: 100%;
     }
 
+    .main_picture_container img{
+        height: 50%;
+        width: 60%;
+    }
+
+    /* description section */
+
+    .description_container{
+        height: auto;
+    }
+
+    .text_desc_container{
+        width: 100%;
+        height: 80%;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    .picture_desc_container{
+        display: none;
+    }
+
+    
+
+    .about_container p{
+        width: 100%;
+        height: auto;
+    }
+
+    /* sending section */
+
+    .sending_container{
+        height: auto;
+        margin-top: 40px;
+    }
+
+    .sending_text_container h1{
+        font-size: 20px;
+    }
+
+    .sending_text_container p{
+        font-size: 12px;
+    }
+
+    .sending_steps_container h3{
+        font-size: 12px;
+    }
+
+    .sending_steps_container p{
+        font-size: 10px;
+    }
+
+    .sending_steps_container div{
+        height: 150px;
+        width: 30%;
+    }
+    
+    .steps_container .steps_img{
+        height: 40px;
+        width: 40px;
+    }
+
+    .steps_img img{
+        height: 35px;
+        width: 35px;
+    }
+
+    /* our services section */
+
+    .our_services_container{
+        margin: 0;
+        height: auto;
+        margin-top: 60px;
+    }
+
+    .our_services_text{
+        align-items: center;
+    }
+
+    .picture_our_container{
+        display: none;
+    }
+
+    /* location */ 
+
+    .location_container{
+        height: auto;
+    }
+
+    .location_text_container h1{
+        font-size: 22px;
+    }
+
+    .location_text_container .select_wilaya label{
+        font-size: 16px;
+    }
+
+    .location_text_container .select_wilaya select{
+        width: 60%;
+    }
+
+    /* footer container */
+
+    .footer_container h3{
+        font-size: 14px;
+    }
+
+    .footer_container a,p{
+        font-size: 10px;
+    }
+
+    .copyright_container{
+        font-size: 8px;
+    }
+
+    .social_media img{
+        height: 20px;
+        width: 20px;
+    }
+    
+    .social_media {
+        height: 20px;
+        width: 20px;
+    }
 
 }
 
