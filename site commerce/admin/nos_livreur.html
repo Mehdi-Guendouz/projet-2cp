@@ -147,6 +147,9 @@
                         <option value="48">Relizane</option>
                     </select>
                 </div>
+                <div>
+                    <button type="submit" class="filtrBtn">Filter</button>
+                </div>
                 <div class="filtre_noslivreur">
                     <form method="POST" action="" class="form_list_livreur">
                         <!--{% csrf_token %}-->
@@ -162,6 +165,7 @@
                         <button type="submit">Search</button>
                     </form>
                 </div>
+
             </div>
             <div class="element_container">
                 <div class="element_header hide_title_colis" >
@@ -177,6 +181,7 @@
                         <label for="nmb_afficher">élément</label>
                     </div>
                     <div class="titles_colis form1">
+                        
                         <div>
                             <h4>Full name</h4>
                         </div>
@@ -189,6 +194,7 @@
                         <div>
                             <h4>Wilaya</h4>
                         </div>
+                        
                     </div>
                     <div class="titles_colis form2">
                         <div>
@@ -211,7 +217,7 @@
                          <div class="mod_ele">
                              
                          </div>
-                         <div class="autre_ele">
+                         <div class="autre_ele table_nos_livreur">
                              <div class="ele">
                                  <p><i class="fa fa-id-card" aria-hidden="true"></i> Nom</p>
                              </div>
@@ -226,7 +232,14 @@
                              </div>
                          </div>
                          <div class="mod_ele mod_ele2">
-                            
+                            <form method="POST" action="" class="formbtn_chaque_colis">
+                                <!--{% csrf_token %}-->
+                            <button type="submit" class="valider_lexp" name = 'submit' value = {{ user.id }}>Send Email</button>
+                            </form>
+                            <form method="POST" action="" class="formbtn_chaque_colis">
+                                <!--{% csrf_token %}-->
+                            <button type="submit" class="valider_lexp" name = 'submit1' value = {{ user.id }}>Licensier livreur</button>
+                            </form>
                          </div>
                      </div>
                      <!--{% empty %}-->

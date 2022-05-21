@@ -420,354 +420,6 @@ body{
     opacity: .8;
 }
 
-.form_container{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.form_img{
-    height: 80%;
-    width: 40%;
-    display: none;
-}
-
-.ajouter_forms{
-    height: 100%;
-    width: 95%;
-    color: var(--second-color-blue);
-
-}
-
-.ajouter_forms h3{
-    font-family: 'Fredoka', sans-serif;
-    font-family: 'Lato', sans-serif;
-    font-family: 'Paytone One', sans-serif;
-}
-
-.ajouter_colis{
-    height: 100%;
-    width: 100%;
-}
-
-.ajouter_colis i {
-    height: 17px;
-    width: 17px;
-    margin-right: 5px;
-}
-
-.destinataire{
-    height: 25%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-
-.destinataire label{
-    height: 20px;
-    margin-right: 10px;
-
-}
-
-.ajouter_colis input:focus{
-    outline: none;
-}
-
-.ajouter_colis input{
-    background-color: var(--gray-c);
-}
-
-.destinataire .destitel{
-    width: 20%;
-    height: 60%;
-    text-align: start;
-    margin: 5px 0px;
-}
-
-.destinataire .desform{
-    height: 80%;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-}
-
-.destinataire .desform .name{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-}
-
-.destinataire .desform .name_container{
-    justify-content: flex-start;
-}
-
-.destinataire .desform .name_container input{
-    height: 30px;
-    width: 42%;
-    border: none;
-    border-bottom: 2px var(--second-color-blue) solid;
-    outline: none;
-}
-
-.destinataire .desform .phone_container{
-    justify-content: space-between;
-}
-
-.destinataire .desform .phone_container div {
-    width: 45%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.destinataire .desform .phone_container div input{
-    height: 30px;
-    width: 100%;
-    border: none;
-    border-bottom: 2px var(--second-color-blue) solid;
-    outline: none;
-}
-
-.info_adresse{
-    height: 30%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 5px 0px;
-}
-
-.info_adresse .info_title{
-    width: 20%;
-    height: 100%;
-    text-align: start;
-}
-
-.info_adresse .info_title h3{
-    margin-top: 15px;
-}
-
-.info_adresse .info_input{
-    height: 100%;
-    width: 80%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    flex-direction: column;
-}
-
-.select_wilaya select {
-    border: none;
-    background-color: var(--gray-c);
-    height: auto;
-    margin: 0;
-    outline: 0;
-    width: 90%;
-    color: var(--second-color-blue);
-    padding: 7px;
-    height: 30px;
-}
-
-.select_wilaya{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.select_wilaya div{
-    width: 45%;
-}
-
-.adresse_txt {
-    height: 50%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.adresse_txt input{
-    height: 80%;
-    width: 40%;
-    background-color: var(--white);
-}
-
-
-.commande_info{
-    height: 30%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.commande_info .cmdinfo_input {
-    height: 100%;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-
-.commande_info .cmdinfo_title{
-    width: 20%;
-    height: 80%;
-    text-align: start;
-
-}
-
-.commande_info .cmdinfo_input .cdm_ele {
-    height: 20%;
-}
-
-.commande_info .cmdinfo_input .remarque_txt{
-    height: 30%;
-    display: flex;
-    align-items: center;
-    
-}
-
-.commande_info .cmdinfo_input .remarque_txt input{
-    height: 80%;
-    width: 40%;
-    margin-left: 5px;
-    background-color: var(--white);
-}
-
-.commande_info .cmdinfo_input .cdm_ele input{
-    height: 30px;
-    width: 40%;
-    border: none;
-    border-bottom: 2px var(--second-color-blue) solid;
-    outline: none;
-}
-
-.commande_info .cmdinfo_input .cdm_ele .lb2{
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.type_delivery{
-    height: 20%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.type_delivery .type_title{
-    height: 80%;
-    width: 20%;
-    text-align: start;
-}
-
-.type_delivery .type_select{
-    width: 80%;
-    height: 100%;
-}
-
-.type_delivery .type_select .type_select_ele{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 50%;
-    width: 100%;
-}
-
-.type_delivery .type_select .type_select_ele .type_input{
-    width: 45%;
-}
-
-.type_delivery .type_select .type_desc{
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.type_delivery .type_select  .type_desc input{
-    height: 80%;
-    width: 40%;
-    margin-left: 5px;
-    background-color: var(--white);
-}
-
-.type_delivery .type_input select {
-    border: none;
-    background-color: var(--gray-c);
-    height: auto;
-    margin: 0;
-    outline: 0;
-    width: 55%;
-    color: var(--second-color-blue);
-    padding: 7px;
-}
-
-.type_delivery .type_input label{
-    margin-right: 5px;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    height: 60%;
-}
-
-
-.submit_btn{
-    width: 100%;
-    height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5px;
-}
-
-.submit_btn .sbmit{
-    padding: 8px 15px;
-    background-color: var(--second-color-blue);
-    border: none;
-    color: var(--white);
-    border-radius: 5px;
-    cursor: pointer;
-    width: 20%;
-    margin-right: 10px;
-    height: 40px;
-    transition: ease-in-out 0.5s;
-    border: 2px transparent solid;
-}
-
-.submit_btn .rest{
-    height: 40px;
-    padding: 8px 15px;
-    background-color: var(--main-color-red);
-    border: none;
-    color: var(--white);
-    border-radius: 5px;
-    cursor: pointer;
-    width: 20%;
-    margin-left: 10px;
-
-}
-
-.submit_btn .sbmit:hover{
-    background-color: var(--green);
-    border-color: var(--green);
-}
-
-
-.submit_btn .rest:hover{
-    background-color: var(--main-color-red);
-}
-
-
-
 /*  main */
 
 .main_container{
@@ -816,7 +468,7 @@ body{
     padding: 7px;
     border-radius: 5px;
     background-color: var(--gray-c);
-    border: none;
+    border: 1px var(--second-color-blue) solid;
     margin-bottom: 5px;
 }
 
@@ -866,7 +518,7 @@ body{
 }
 
 .filtre  select {
-    border: none;
+    border: 1px var(--second-color-blue) solid;
     background-color: var(--gray-c);
     height: auto;
     margin: 0;
@@ -944,6 +596,7 @@ body{
 .element_container .element_header .afficher_mult div select{
     width: 20%;
     height: 100%;
+    border: 1px var(--second-color-blue) solid;
 }
 
 .element_container .element_header .afficher_mult .select_delivery button{
@@ -955,6 +608,7 @@ body{
 
 .element_container .element_header .afficher_mult .select_delivery select{
     width: 70%;
+    border: 1px var(--second-color-blue) solid;
 }
 /* historique part*/
 .element_container .element_header .afficher_mult .select_hstq{
@@ -970,6 +624,7 @@ body{
     height: 20px;
     margin: 0px 5px;
     margin-bottom: 10px;
+    border: 1px var(--second-color-blue) solid;
 }
 
 /* end */
@@ -984,7 +639,7 @@ body{
 }
 
 .element_container .element_header .numb_afficher  select{
-    border: none;
+    border: 1px var(--second-color-blue) solid;
     background-color: var(--gray-c);
     height: 80%;
     margin: 0;
@@ -1196,7 +851,7 @@ body{
     height: 12px;
     width: 80%;
     padding: 5px;
-    border: 2px var(--black) solid;
+    border: 1px var(--second-color-blue) solid;
     outline: none;
     
 }
@@ -1240,7 +895,7 @@ body{
     border-radius: 0px;
     margin: 0px 5px;
     margin-bottom: 5px;
-    border: 1px black solid;
+    border: 1px var(--second-color-blue) solid;
     color: var(--second-color-blue);
 }
 
@@ -1268,7 +923,7 @@ body{
     width: 95%;
     height: 20px;
     border-radius: 3px;
-    border: 1px black solid;
+    border: 1px var(--second-color-blue) solid;
     margin-bottom: 5px;
     color: var(--second-color-blue);
 }

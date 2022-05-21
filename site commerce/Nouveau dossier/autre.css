@@ -51,6 +51,14 @@ body{
     height: 100vh;
 }
 
+.red{
+    color: var(--main-color-red);
+}
+
+body select{
+    border: 1px var(--second-color-blue) solid;
+}
+
 .menu{
     background-color: var(--gray);
     width: calc(20% - 2px);
@@ -477,6 +485,7 @@ body{
 
 .ajouter_colis input{
     background-color: var(--gray-c);
+    
 }
 
 .destinataire .destitel{
@@ -509,8 +518,7 @@ body{
 .destinataire .desform .name_container input{
     height: 30px;
     width: 42%;
-    border: none;
-    border-bottom: 2px var(--second-color-blue) solid;
+    border: 1px var(--second-color-blue) solid;
     outline: none;
 }
 
@@ -529,8 +537,7 @@ body{
 .destinataire .desform .phone_container div input{
     height: 30px;
     width: 100%;
-    border: none;
-    border-bottom: 2px var(--second-color-blue) solid;
+    border: 1px var(--second-color-blue) solid;
     outline: none;
 }
 
@@ -563,7 +570,6 @@ body{
 }
 
 .select_wilaya select {
-    border: none;
     background-color: var(--gray-c);
     height: auto;
     margin: 0;
@@ -644,8 +650,7 @@ body{
 .commande_info .cmdinfo_input .cdm_ele input{
     height: 30px;
     width: 40%;
-    border: none;
-    border-bottom: 2px var(--second-color-blue) solid;
+    border: 1px var(--second-color-blue) solid;
     outline: none;
 }
 
@@ -700,7 +705,6 @@ body{
 }
 
 .type_delivery .type_input select {
-    border: none;
     background-color: var(--gray-c);
     height: auto;
     margin: 0;
@@ -814,7 +818,7 @@ body{
     padding: 7px;
     border-radius: 5px;
     background-color: var(--gray-c);
-    border: none;
+    border: 1px var(--second-color-blue) solid;
     margin-bottom: 5px;
 }
 
@@ -824,7 +828,7 @@ body{
     background-color: var(--gray-c);
     color: var(--second-color-blue);
     border-radius: 5px;
-    border-color: var(--second-color-blue);
+    border: 1px var(--second-color-blue) solid;
     margin-bottom: 5px;
 }
 
@@ -864,7 +868,6 @@ body{
 }
 
 .filtre  select {
-    border: none;
     background-color: var(--gray-c);
     height: auto;
     margin: 0;
@@ -934,7 +937,6 @@ body{
 }
 
 .element_container .element_header .numb_afficher select{
-    border: none;
     background-color: var(--gray-c);
     height: 80%;
     margin: 0;
