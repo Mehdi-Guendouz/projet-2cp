@@ -32,6 +32,7 @@ body{
 	filter: blur(50px);
 	z-index: -1;
 }
+
 .contact-box{
 	max-width: 850px;
 	display: grid;
