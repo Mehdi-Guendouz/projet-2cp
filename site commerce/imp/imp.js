@@ -1,4 +1,4 @@
-const imprimerContainer = document.querySelector(".body_container")
+/*const imprimerContainer = document.querySelector(".body_container")
 const imprimerBtn = document.querySelector(".imprimer")
 
 imprimerBtn.addEventListener("click",()=>{
@@ -8,4 +8,16 @@ imprimerBtn.addEventListener("click",()=>{
     newwindow.close()
 })
 
-console.log(imprimerContainer)
+console.log(imprimerContainer)*/
+
+
+
+const printEttiquet = document.querySelector(".body_container")
+console.log(printEttiquet)
+
+
+
+function printettquet(){
+    html2pdf().from(printEttiquet).save()
+    console.log(printEttiquet)
+  }

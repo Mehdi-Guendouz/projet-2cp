@@ -12,7 +12,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 180vh;
+    flex-direction: column;
+    height: auto;
     width: 200vh;
     background-color: #E6E6E6;
 }
@@ -151,7 +152,8 @@
 
 
 .footer_imprimer{
-    height: calc(140vh - 60%);
+    height: 50vh;
+    background-color: aqua;
     width: 110vh;
     margin-top: 10px;
     border-top: 3px black dashed ;
