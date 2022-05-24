@@ -1,0 +1,237 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+}
+
+body{
+	height: 100vh;
+	width: 100%;
+}
+
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+.container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("img/houses-gc6ae622d6_1920.jpg") no-repeat center;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+
+.contact-box{
+	max-width: 850px;
+    height: 500px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+	background-size: cover;
+	height: 100%;
+}
+
+.pic1 {
+    background: url("img/Done-rafiki.svg") no-repeat center;
+}
+
+.pic2 {
+    background: url("img/send_email.svg") no-repeat center;
+}
+
+.pic3 {
+    background: url("img/Security.svg") no-repeat center;
+}
+
+.pic4 {
+    background: url("img/Security_On-pana.svg") no-repeat center;
+}
+
+.pic5 {
+    background: url("img/Forgot_password-bro.svg") no-repeat center;
+}
+
+.right{
+	padding: 25px 40px;
+    height: 200px;
+}
+
+.contact-box .right .reset_par p{
+    font-size: 15px;
+    color: red;
+}
+
+.contact-box .right .reset_par{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right p{
+    height: 70px;
+    font-size: 22px;
+    opacity: .9;
+}
+
+.right_pass_reset {
+    height: auto;
+}
+
+.right_pass_reset .emailp{
+    font-size: 16px;
+    height: 70px;
+    margin-bottom: 5px;
+}
+
+.right .AtagBtn{
+    padding: 10px 20px;
+    background-color: #27ae60;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.right_pass_reset .AtagBtn1{
+    font-size: 16px;
+    padding: 7px 10px;
+    border-radius: 0px;
+}
+
+.right .AtagBtn:hover{
+    background-color: #21354B;
+    color: white;
+}
+
+.right_pass_reset a:hover{
+    color: red;
+    margin-top: 10px;
+}
+
+.right_pass_reset a{
+    font-size: 14px;
+    margin:10px 0px;
+}
+
+.form_all{
+    margin: 10xp 0px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 300px;
+    border-radius: 2px;
+    background-color: #D03925;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #21354B;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn-submit1{
+    width: 30%;
+    padding: 0.5rem .5rem;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.btn:hover{
+    background-color: #27ae60;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+.erreur_container{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #D03925;
+}
+
+
+
+
+.erreur_container button{
+    margin-left: 10px;
+    padding: 5px 7px;
+    background-color: #D03925;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}

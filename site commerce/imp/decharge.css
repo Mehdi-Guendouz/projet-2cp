@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Paytone+One&family=Roboto&display=swap');
+
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.body_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 200vh;
+    background-color: #E6E6E6;
+}
+
+.imprimer_decharge_container{
+    height: 140vh;
+    width: 120vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.logo_info_decharge {
+    height: calc(140vh - 88%);
+    width: 110vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    border-bottom: 2px black solid;
+    background-color: aqua;
+}
+
+.logo_info_decharge a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.logo_info_decharge .logo{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_info_decharge .logo img{
+    height: 100px;
+    width: 100px;
+}
+
+.logo_info_decharge .contanct{
+    height: 100%;
+    width: 50%;
+    text-align: center;
+}
+
+.logo_info_decharge .contanct p{
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.logo_info_decharge .liste_p{
+    border-top: 1px black solid;
+}
+
+.logo_info_decharge .info_wilaya{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_info_decharge .info_wilaya h3{
+    font-size: 16px;
+    opacity: .8;
+}
+
+
+.decharge_table_container{
+    display: grid;
+    grid-template-columns: repeat(9,auto);
+    grid-template-rows: 50px 50px;
+    row-gap: 5px;
+    width: 100%;
+    height: calc(140vh - 70%);
+}
+
+.decharge_table_container h3{
+    font-size: 16px;
+}
+
+.table_decharge{
+        height: calc(140vh - 90%);
+        width: 110vh;
+        margin-top: 50px;
+        border-top: 2px black solid;
+}
+
