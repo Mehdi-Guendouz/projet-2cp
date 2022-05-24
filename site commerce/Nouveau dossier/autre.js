@@ -9,7 +9,19 @@ const tableColisPretexp = document.querySelectorAll(".table_element")
 const printAllEttiquet = document.getElementById("print_all")
 const printOneEttiquet = document.querySelectorAll(".print_one_element")
 const printBtnOne = document.querySelectorAll(".impBtn_one")
+const profilCnt = document.querySelector('.btn_log')
+const formProfil = document.querySelector(".form_change_username")
 let notfNumber = 0;
+
+
+
+
+/* profile hide*/
+function hideProfil(){
+  profilCnt.classList.add("profil_hide")
+  formProfil.classList.remove("hide_form")
+}
+
 
 /* print*/
 
@@ -26,7 +38,7 @@ function printettquet(){
 }
 
 /*==============*/
-
+/*
 toggleBtn.addEventListener("click",()=>{
   navContainer.classList.toggle("hide_sidebar")
 })
@@ -38,7 +50,7 @@ closeBtn.addEventListener("click",()=>{
    navContainer.classList.remove("hide_sidebar")
 })
 
-
+*/
 
 selector.forEach(function(element){
     element.addEventListener("click",(e)=>{

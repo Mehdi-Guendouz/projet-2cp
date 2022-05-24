@@ -381,7 +381,10 @@ body select{
     border-bottom: none;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    height: 20vh;
 }
 
 .prof_body .btn_log button img{
@@ -389,9 +392,59 @@ body select{
     margin-right: 2px;
 }
 
+.btn_log  a{
+    font-size: 14px;
+    color: blue;
+    border-bottom: 1px blue solid;
+}
+
+.logout a{
+    color: var(--white);
+    margin: 10px 15px;
+    border: none;
+}
+
+.profil_hide .change_btn{
+    display: none;
+}
+
+.hide_form{
+    display: none;
+}
+
+.form_change_username button{
+    background-color: #007f66;
+    border: none;
+    padding: 9px 15px;
+    cursor: pointer;
+    color: white;
+    margin-left: 20px;
+    transition: .8s;
+}
+
+.form_change_username button:hover {
+    background-color: #21354B;
+}
+
+.field{
+	width: 50%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: var(--second-color-blue);
+	padding: 5px 15px;
+	font-size: 16px;
+	transition: .3s;
+    color: white;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
 .logout{
-    height: 100%;
-    width: 33%;
+    height: 40px;
+    width: 100px;
     color: var(--white);
     cursor: pointer;
     background-color: var(--second-color-blue);
@@ -1432,7 +1485,7 @@ body select{
     height: auto;
     width: 200vh;
     background-color: #E6E6E6;
-    display: none;
+    
 }
 
 .imprimer_container{
@@ -1599,3 +1652,114 @@ body select{
     justify-content: center;
     flex-direction: column;
 }
+
+
+
+/*============================================*/
+
+/*
+
+.container{
+	position: relative;
+    float: right;
+    background-color: var(--gray);
+	width: 80%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+.container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+	background: url("img/Mail-cuate\ \(1\).png") no-repeat center;
+	background-size: cover;
+	height: 100%;
+    width: 200px;
+}
+
+.right{
+	padding: 25px 40px;
+    width: 100%;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 75px;
+    border-radius: 2px;
+    background-color: #D03925;
+}
+
+.field{
+	width: 300px;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+    text-align: start;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #21354B;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .5s;
+}
+
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+*/
+

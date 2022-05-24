@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" href="./autre.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
 </head>
 <body>
@@ -80,44 +81,19 @@
                 <a href="#"><img src="../img/profile_pic.png" alt="Profil"></a>
             </div>
         </div>
-    </div>         
+    </div>          
     <div class="pret_container_profil">
-        <div class="profil_container">
-            <div class="profil_header">
-                <h1 id="text_font_titles">Your Profil</h1>
-                <div>
-                    <img src="../img/profile_pic.png" alt="profil">
+        <div class="container">
+            <div class="contact-box">
+                <div class="left"></div>
+                <div class="right">
+                    <h2>Your Profil</h2>
+                    <p class="field">Name:  Guendouz</p>
+                    <p class="field">Prenom: Mehdi</p>
+                    <p class="field">Phone:  0755369801</p>
+                    <p class="field">E-mail: mahdign12@gmail.com</p>
                 </div>
             </div>
-            <div class="prof_body" id="text_font_paragraph">
-                <div>
-                    <h3>Nom/Prenom: </h3>
-                    <p>name</p>
-                </div>
-                <div>
-                    <h3>Username: </h3>
-                    <p>user</p>
-                </div>
-                <div>
-                    <h3>E-mail: </h3>
-                    <p>emaill@gamil.com</p>
-                </div>
-                <div>
-                    <h3>Phone num:</h3>
-                    <p>0755680010</p>
-                </div>
-                <div class="btn_log ">
-                    <button class="logout" ><i class="fa fa-sign-in" aria-hidden="true"></i><a href="{% url 'logout' %}">Log Out</a></button>
-                    <a href="#">Change Password?</a>
-                    <a href="#" onclick="hideProfil()" class="change_btn">change username ?</a>
-                    <form method="POST" action="" class="form_change_username hide_form">
-                        <!--{% csrf_token %}-->
-                    <input type = 'texte' name = 'usernamee' placeholder=" Change Username" class="field">
-                    <button type="submit">Change</button>
-                    </form>
-                </div>
-            </div>
-
         </div>
     </div>
        
