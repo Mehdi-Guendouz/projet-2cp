@@ -318,10 +318,10 @@
     </div> 
     <!--{% for instance in object_list %}-->
     <div class="confirm_contaner hide_delete">
-        <div class="container">
+        <div class="container ">
             <div class="contact-box">
                 <div class="right">
-                    <h2>Do you realy want to delete the package!! one </h2>
+                    <h2>Do you realy want to delete the package!!</h2>
                     <form method="POST" action="{{ instance.get_absolute_url }}delete/" class="form_container">
                     <!--{% csrf_token %}-->
                     <button type="submit" class="btn_delete">DELETE</button>
@@ -331,20 +331,7 @@
             </div>
         </div>
     </div>  
-    <div class="confirm_contaner hide_delete">
-        <div class="container">
-            <div class="contact-box">
-                <div class="right">
-                    <h2>Do you realy want to delete the package!! two </h2>
-                    <form method="POST" action="{{ instance.get_absolute_url }}delete/" class="form_container">
-                    <!--{% csrf_token %}-->
-                    <button type="submit" class="btn_delete">DELETE</button>
-                   
-                    <button type="button" class="btn_delete close_popup">Close</button>
-                </form>
-            </div>
-        </div>
-    </div>  
+    </div>
     <!--{% endfor %}-->
     <script src="./autre.js"></script>
 

@@ -1666,8 +1666,12 @@ body select{
     transition: .5s;
 }
 
-.hide_delete{
+.hide_delete .hideone{
     display: none;
+}
+
+.hide_delete {
+    z-index: -10;
 }
 
 .container_confirm{

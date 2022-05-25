@@ -13,24 +13,28 @@ const profilCnt = document.querySelector('.btn_log')
 const formProfil = document.querySelector(".form_change_username")
 const popupcontainer = document.querySelectorAll(".confirm_contaner")
 const deletBtn = document.querySelectorAll(".DeletBtn")
+const closePopUp = document.querySelectorAll(".close_popup")
 let notfNumber = 0;
 
 /* pup up supprimer start*/
 
-console.log(popupcontainer[1])
-
 deletBtn.forEach(function(deletElement,i){
   deletElement.addEventListener("click",delet =>{
-    const targetToDelet = popupcontainer[1]
-    console.log(i)
-    targetToDelet.classList.remove("hide_delete")
-    const targetclose = targetToDelet.querySelector(".close_popup")
-    targetclose.addEventListener("click",()=>{
-      targetToDelet.classList.add("hide_delete")
-    })
+    const targetToDelet = popupcontainer[i]
+    targetToDelet.classList.toggle("hide_delete")
   })
 })
 
+closePopUp.forEach(function(closeElement,i){
+  closeElement.addEventListener("click", Cls=>{
+    const targetToclose = popupcontainer[i]
+    targetToclose.classList.toggle("hide_delete")
+
+  })
+})
+
+
+deletBtn
 
 /* =========*/
 
