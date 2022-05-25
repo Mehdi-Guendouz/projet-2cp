@@ -367,13 +367,7 @@ function popup(){
     popupcontainer.style.display = 'none'
 }
 
-function location_we(){
-    let nmbWilaya = wilayaLoc.options[wilayaLoc.selectedIndex].value
-    if (nmbWilaya !== 0){
-        locationNew.src = locationBureau[nmbWilaya].localisation
-    }
-    
-}
+
 
 navBtn.addEventListener("click",()=>{
     nav_barr_container.classList.toggle("hidde_nav")

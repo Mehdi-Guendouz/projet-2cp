@@ -219,51 +219,8 @@
                     </div>
                 </div>
                 <div class="element_desc">
-                    <div class="ele_container table_element">
-                        <div class="mod_ele">
-                            <form method="POST" action="{{ instance.get_absolute_url }}update/" class="mod_ele">
-                                <!--{% csrf_token %}-->
-                            <button type="submit" class="modifier">UPDATE</button>
-                            </form>
-                        </div>
-                        <div class="autre_ele">
-                            <div class="ele">
-                                <p><i class="fa fa-id-badge" aria-hidden="true"></i> num colis</p>
-                                <p><i class="fa fa-archive" aria-hidden="true"></i>  Nmb commande</p>
-                                <p><i class="fa fa-truck" aria-hidden="true"></i> type</p>
-                                <p><i class="fa fa-calendar" ></i> temps</p>
-                            </div>
-                            <div>
-                                <p><i class="fa fa-map" aria-hidden="true"></i> wilaya</p>
-                                <p><i class="fa fa-location-arrow" aria-hidden="true"></i> commune</p>
-                                <p><i class="fa fa-map-marker" aria-hidden="true"></i> adresse</p>
-                            </div>
-                            <div>
-                                <p><i class="fa fa-id-card" aria-hidden="true"></i> Nom</p>
-                                <p><i class="fa fa-mobile" aria-hidden="true"></i> num tel</p>
-                            </div>
-                            <div>
-                                <p><i class="fa fa-comment" aria-hidden="true"></i> RQ</p>
-                                <p><i class="fa fa-box"></i> produit</p>
-                                <p><i class="fa fa-cubes" aria-hidden="true"></i> pois</p>
-                            </div>
-                            <div class="ele">
-                                <p><i class="fa fa-dollar-sign" aria-hidden="true"></i> prix</p>
-                            </div>
-                        </div>
-                        <div class="mod_ele mod_ele2">
-                            <!--<form method="POST" action="{{ instance.get_absolute_url }}delete/" class="form_container">-->
-                                <!--{% csrf_token %}-->
-                            <button type="submit" class="supprimer_ele" onclick="openPopUp()"><i class="fa fa-trash" aria-hidden="true"></i>DELETE</button>
-                            <!--</form>
-                            <form method="POST" action="{{ instance.get_absolute_url }}validate_expedier/" class="form_container">-->
-                                <!--{% csrf_token %}-->
-                            <button type="submit" class="valider_lexp">VALIDATE</button>
-                            <!--</form>-->
-                            <button class="imprimer impBtn_one">Etiquettes</button>
-                        </div>
-                    </div>
                    <!--{% for instance in object_list %}-->
+
                     <div class="ele_container table_element">
                         <div class="mod_ele">
                             <form method="POST" action="{{ instance.get_absolute_url }}update/" class="mod_ele">
@@ -298,7 +255,50 @@
                         </div>
                         <div class="mod_ele mod_ele2">
                             
-                            <button type="submit" class="supprimer_ele" onclick="openPopUp()"><i class="fa fa-trash" aria-hidden="true"></i>DELETE</button>
+                            <button type="submit" class="supprimer_ele DeletBtn" ><i class="fa fa-trash" aria-hidden="true"></i>DELETE</button>
+                            
+                            <!--<form method="POST" action="{{ instance.get_absolute_url }}validate_expedier/" class="form_container">-->
+                                <!--{% csrf_token %}-->
+                            <button type="submit" class="valider_lexp" >VALIDATE</button>
+                            <!--</form>-->
+                            <button class="imprimer impBtn_one">Etiquettes</button>
+                        </div>
+                    </div>
+                    <div class="ele_container table_element">
+                        <div class="mod_ele">
+                            <form method="POST" action="{{ instance.get_absolute_url }}update/" class="mod_ele">
+                                <!--{% csrf_token %}-->
+                            <button type="submit" class="modifier">UPDATE</button>
+                            </form>
+                        </div>
+                        <div class="autre_ele">
+                            <div class="ele">
+                                <p><i class="fa fa-id-badge" aria-hidden="true"></i> num colis</p>
+                                <p><i class="fa fa-archive" aria-hidden="true"></i>  Nmb commande</p>
+                                <p><i class="fa fa-truck" aria-hidden="true"></i> type</p>
+                                <p><i class="fa fa-calendar" ></i> temps</p>
+                            </div>
+                            <div>
+                                <p><i class="fa fa-map" aria-hidden="true"></i> wilaya</p>
+                                <p><i class="fa fa-location-arrow" aria-hidden="true"></i> commune</p>
+                                <p><i class="fa fa-map-marker" aria-hidden="true"></i> adresse</p>
+                            </div>
+                            <div>
+                                <p><i class="fa fa-id-card" aria-hidden="true"></i> Nom</p>
+                                <p><i class="fa fa-mobile" aria-hidden="true"></i> num tel</p>
+                            </div>
+                            <div>
+                                <p><i class="fa fa-comment" aria-hidden="true"></i> RQ</p>
+                                <p><i class="fa fa-box"></i> produit</p>
+                                <p><i class="fa fa-cubes" aria-hidden="true"></i> pois</p>
+                            </div>
+                            <div class="ele">
+                                <p><i class="fa fa-dollar-sign" aria-hidden="true"></i> prix</p>
+                            </div>
+                        </div>
+                        <div class="mod_ele mod_ele2">
+                            
+                            <button type="submit" class="supprimer_ele DeletBtn" ><i class="fa fa-trash" aria-hidden="true"></i>DELETE</button>
                             
                             <!--<form method="POST" action="{{ instance.get_absolute_url }}validate_expedier/" class="form_container">-->
                                 <!--{% csrf_token %}-->
@@ -315,146 +315,37 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- impprimer container -->
-    <div class="body_container">
-        <div class="imprimer_container" id="print_all" >
-            <div class="print_one_element one">
-                <div class="logo_info">
-                    <div class="logo">
-                        <img src="../../img/world_express_logo.png" alt="logo">
-                    </div>
-                    <div class="contanct">
-                        <p>World Express - Société de livraison</p>
-                        <p>Tel:</p>
-                        <p>Website: <a href="../../main/index.html" target="_blank">worldexpress.com</a></p>
-                    </div>
-                    <div class="info_wilaya">
-                        <h3>Adrar</h3>
-                    </div>
-                </div>
-                <div  class="info_colis">
-                    <div class="description_colis">
-                        <p>desdinatiare: hi je suis the one </p>
-                        <p>telephone:</p>
-                        <p>montant:</p>
-                        <p>adress</p>
-                        <p>commune</p>
-                        <p>wilaya</p>
-                        <p>remarque</p>
-                        <p>produit</p>
-                        <p>colis crée le:</p>
-                        <p>id de produit:</p>
-                    </div>
-                    <div class="pois_type_container">
-                        <div class="qr_code">
-                            <img src="../img/qr_code.png" alt="">
-                        </div>
-                        <div class="type">
-                            <h3>pois</h3>
-                        </div>
-                        <div class="type">
-                            <h3>livraison</h3>
-                        </div>
-                        <div class="type">
-                            <h3>stop desk</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="info_expediteur">
-                    <div>
-                        <p>expéditeur: ESTM</p>
-                        <p>Adresse: bejaia - bejaia</p>
-                        <p>service client: 0783008683</p>
-                    </div>
-                    <div>
-                        <h3>réference:</h3>
-                    </div>
-                </div>
-                <div class="footer_imprimer">
-                    <h2>CONDITIONS GENERALES DE TRANSPORT DES MARCHANDISES ET COLIS</h2>
-                    <p>Je certifie que les détails déclarés sur ce bordereau sont correct et que le colis ne contient aucun produit
-                        dangereux ou interdit par la loi</p>
-                </div>
-            </div>
-            <!--============================-->
-            <div class="html2pdf__page-break"></div>
-            <div class="print_one_element two">
-                <div class="logo_info">
-                    <div class="logo">
-                        <img src="../../img/world_express_logo.png" alt="logo">
-                    </div>
-                    <div class="contanct">
-                        <p>World Express - Société de livraison</p>
-                        <p>Tel:</p>
-                        <p>Website: <a href="../../main/index.html">worldexpress.com</a></p>
-                    </div>
-                    <div class="info_wilaya">
-                        <h3>Adrar</h3>
-                    </div>
-                </div>
-                <div  class="info_colis">
-                    <div class="description_colis">
-                        <p>desdinatiare: hi im two</p>
-                        <p>telephone:</p>
-                        <p>montant:</p>
-                        <p>adress</p>
-                        <p>commune</p>
-                        <p>wilaya</p>
-                        <p>remarque</p>
-                        <p>produit</p>
-                        <p>colis crée le:</p>
-                        <p>id de produit:</p>
-                    </div>
-                    <div class="pois_type_container two">
-                        <div class="qr_code">
-                            <img src="../img/qr_code.png" alt="">
-                        </div>
-                        <div class="type">
-                            <h3>pois</h3>
-                        </div>
-                        <div class="type">
-                            <h3>livraison</h3>
-                        </div>
-                        <div class="type">
-                            <h3>stop desk</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="info_expediteur">
-                    <div>
-                        <p>expéditeur: ESTM</p>
-                        <p>Adresse: bejaia - bejaia</p>
-                        <p>service client: 0783008683</p>
-                    </div>
-                    <div>
-                        <h3>réference:</h3>
-                    </div>
-                </div>
-                <div class="footer_imprimer">
-                    <h2>CONDITIONS GENERALES DE TRANSPORT DES MARCHANDISES ET COLIS</h2>
-                    <p>Je certifie que les détails déclarés sur ce bordereau sont correct et que le colis ne contient aucun produit
-                        dangereux ou interdit par la loi</p>
-                </div>
-            </div>
-        </div>
-            
-    </div>
-    <div class="confirm_contaner ">
+    </div> 
+    <!--{% for instance in object_list %}-->
+    <div class="confirm_contaner hide_delete">
         <div class="container">
             <div class="contact-box">
-                
                 <div class="right">
-                    <h2>Do you realy want to delete the package!! </h2>
+                    <h2>Do you realy want to delete the package!! one </h2>
                     <form method="POST" action="{{ instance.get_absolute_url }}delete/" class="form_container">
                     <!--{% csrf_token %}-->
                     <button type="submit" class="btn_delete">DELETE</button>
                    
-                    <button type="button" class="btn_delete" onclick="popupClose()">Close</button>
+                    <button type="button" class="btn_delete close_popup">Close</button>
                 </form>
             </div>
         </div>
     </div>  
+    <div class="confirm_contaner hide_delete">
+        <div class="container">
+            <div class="contact-box">
+                <div class="right">
+                    <h2>Do you realy want to delete the package!! two </h2>
+                    <form method="POST" action="{{ instance.get_absolute_url }}delete/" class="form_container">
+                    <!--{% csrf_token %}-->
+                    <button type="submit" class="btn_delete">DELETE</button>
+                   
+                    <button type="button" class="btn_delete close_popup">Close</button>
+                </form>
+            </div>
+        </div>
+    </div>  
+    <!--{% endfor %}-->
     <script src="./autre.js"></script>
 
 </body>

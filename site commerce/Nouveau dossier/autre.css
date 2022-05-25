@@ -1664,6 +1664,9 @@ body select{
     top: 0;
     z-index: 20;
     transition: .5s;
+}
+
+.hide_delete{
     display: none;
 }
 
@@ -1674,7 +1677,6 @@ body select{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 }
 
 .container:after{

@@ -11,18 +11,27 @@ const printOneEttiquet = document.querySelectorAll(".print_one_element")
 const printBtnOne = document.querySelectorAll(".impBtn_one")
 const profilCnt = document.querySelector('.btn_log')
 const formProfil = document.querySelector(".form_change_username")
-const popupcontainer = document.querySelector(".confirm_contaner")
+const popupcontainer = document.querySelectorAll(".confirm_contaner")
+const deletBtn = document.querySelectorAll(".DeletBtn")
 let notfNumber = 0;
 
 /* pup up supprimer start*/
 
-function popupClose(){
-    popupcontainer.style.display = 'none'
-}
+console.log(popupcontainer[1])
 
-function openPopUp(){
-  popupcontainer.style.display = ' '
-}
+deletBtn.forEach(function(deletElement,i){
+  deletElement.addEventListener("click",delet =>{
+    const targetToDelet = popupcontainer[1]
+    console.log(i)
+    targetToDelet.classList.remove("hide_delete")
+    const targetclose = targetToDelet.querySelector(".close_popup")
+    targetclose.addEventListener("click",()=>{
+      targetToDelet.classList.add("hide_delete")
+    })
+  })
+})
+
+
 /* =========*/
 
 
