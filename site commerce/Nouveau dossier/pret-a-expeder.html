@@ -254,7 +254,7 @@
                         <div class="mod_ele mod_ele2">
                             <!--<form method="POST" action="{{ instance.get_absolute_url }}delete/" class="form_container">-->
                                 <!--{% csrf_token %}-->
-                            <button type="submit" class="supprimer_ele"><i class="fa fa-trash" aria-hidden="true"></i>DELETE</button>
+                            <button type="submit" class="supprimer_ele" onclick="openPopUp()"><i class="fa fa-trash" aria-hidden="true"></i>DELETE</button>
                             <!--</form>
                             <form method="POST" action="{{ instance.get_absolute_url }}validate_expedier/" class="form_container">-->
                                 <!--{% csrf_token %}-->
@@ -297,13 +297,12 @@
                             </div>
                         </div>
                         <div class="mod_ele mod_ele2">
-                            <!--<form method="POST" action="{{ instance.get_absolute_url }}delete/" class="form_container">-->
+                            
+                            <button type="submit" class="supprimer_ele" onclick="openPopUp()"><i class="fa fa-trash" aria-hidden="true"></i>DELETE</button>
+                            
+                            <!--<form method="POST" action="{{ instance.get_absolute_url }}validate_expedier/" class="form_container">-->
                                 <!--{% csrf_token %}-->
-                            <button type="submit" class="supprimer_ele"><i class="fa fa-trash" aria-hidden="true"></i>DELETE</button>
-                            <!--</form>
-                            <form method="POST" action="{{ instance.get_absolute_url }}validate_expedier/" class="form_container">-->
-                                <!--{% csrf_token %}-->
-                            <button type="submit" class="valider_lexp">VALIDATE</button>
+                            <button type="submit" class="valider_lexp" >VALIDATE</button>
                             <!--</form>-->
                             <button class="imprimer impBtn_one">Etiquettes</button>
                         </div>
@@ -441,6 +440,21 @@
         </div>
             
     </div>
+    <div class="confirm_contaner ">
+        <div class="container">
+            <div class="contact-box">
+                
+                <div class="right">
+                    <h2>Do you realy want to delete the package!! </h2>
+                    <form method="POST" action="{{ instance.get_absolute_url }}delete/" class="form_container">
+                    <!--{% csrf_token %}-->
+                    <button type="submit" class="btn_delete">DELETE</button>
+                   
+                    <button type="button" class="btn_delete" onclick="popupClose()">Close</button>
+                </form>
+            </div>
+        </div>
+    </div>  
     <script src="./autre.js"></script>
 
 </body>

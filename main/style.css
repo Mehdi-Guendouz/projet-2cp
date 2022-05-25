@@ -1646,6 +1646,7 @@ header{
     position: fixed;
     top: 0;
     z-index: 20;
+    transition: .5s;
 }
 
 .container{
@@ -1665,7 +1666,7 @@ header{
 	height: 100%;
 	left: 0;
 	top: 0;
-    background: url("../img/wolves-g11386bb56_1920.jpg") no-repeat center;
+    background: url("../img/main_worldexpress.png") no-repeat center;
 	background-size: cover;
 	filter: blur(10px);
 	z-index: 15;
@@ -1674,7 +1675,7 @@ header{
 .contact-box{
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(1, 1fr);
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -1683,13 +1684,15 @@ header{
     z-index: 20;
 }
 
-.left{
-	background-size: cover;
-	height: 100%;
-}
+
 
 .right{
 	padding: 25px 40px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 h2{
@@ -1705,33 +1708,14 @@ h2:after{
     bottom: 0;
     transform: translateX(-50%);
     height: 4px;
-    width: 75px;
+    width: 80%;
     border-radius: 2px;
     background-color: #D03925;
 }
 
-.field{
-	width: 100%;
-	border: 2px solid rgba(0, 0, 0, 0);
-	outline: none;
-	background-color: rgba(230, 230, 230, 0.6);
-	padding: 0.5rem 1rem;
-	font-size: 1.1rem;
-	margin-bottom: 22px;
-	transition: .3s;
-}
-
-
-.field:hover{
-	background-color: rgba(0, 0, 0, 0.1);
-}
-
-textarea{
-	min-height: 150px;
-}
 
 .btn{
-	width: 100%;
+	width: 40%;
 	padding: 0.5rem 1rem;
 	background-color: #21354B;
 	color: #fff;
@@ -1740,13 +1724,9 @@ textarea{
 	outline: none;
 	cursor: pointer;
 	transition: .5s;
+    margin: 20px 0px;
 }
 
 .btn:hover{
     background-color: #27ae60;
-}
-
-.field:focus{
-    border: 2px solid rgba(30,85,250,0.47);
-    background-color: #fff;
 }

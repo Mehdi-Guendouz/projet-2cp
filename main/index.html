@@ -200,14 +200,12 @@
     <div class="confirm_contaner">
         <div class="container">
             <div class="contact-box">
-                <div class="left"></div>
+                
                 <div class="right">
-                    <h2>Feedbacks</h2>
-                    <input type="text" class="field" placeholder="Your Name">
-                    <input type="text" class="field" placeholder="Your Email">
-                    <input type="text" class="field" placeholder="Phone">
-                    <textarea placeholder="Message" class="field"></textarea>
-                    <button class="btn">Send</button>
+                    <!--{% for message in messages %}-->
+                    <h2  {% if message.tags %} class=" {{ message.tags }} " {% endif %}> Account successfully created, please check your email in order to activate your account </h2>
+                    <!--{% endfor %}-->
+                    <button class="btn" onclick="popup()">click to close</button>
                 </div>
             </div>
         </div>
